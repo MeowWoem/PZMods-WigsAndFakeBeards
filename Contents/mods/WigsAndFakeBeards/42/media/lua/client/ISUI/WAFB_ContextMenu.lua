@@ -16,13 +16,15 @@ local function predicateRazor(item)
     return not item:isBroken() and item:hasTag("Razor")
 end
 
-function ContextMenu.onCutHair(playerObj, corpse, item)
+function ContextMenu.onCutHair(playerObj, context, corpse, item)
 	local pos = corpse:getGrabHeadPosition(Vector2f.new())
 	ISTimedActionQueue.add(ISPathFindAction:pathToLocationF(playerObj, pos:x(), pos:y(), corpse:getZ()))
 	--if luautils.walkAdj(playerObj, corpse:getSquare(), false) then
 		ISTimedActionQueue.add(ISCorpseHairCutting:new(playerObj, corpse, item));
 	--end	
-	
+	if context then
+        context:closeAll()
+    end
 end
 
 function ContextMenu.onCutWigOrFakeBeard(playerObj, item, itemType, scissors, hairTuftQty)
@@ -43,151 +45,224 @@ function ContextMenu.onDebugHairStyle(player, corpse, style)
 	
 end
 
+local function addCutHairOptions(playerObj, context, menu, corpse, shear, razor, scissors)
+
+	local shaveHairOption = menu:addOption(getText("ContextMenu_ShaveCorpseHair"), playerObj, ContextMenu.onCutHair, context, corpse, shear);
+	local shaveRazorHairOption = menu:addOption(getText("ContextMenu_ShaveRazorCorpseHair"), playerObj, ContextMenu.onCutHair, context, corpse, razor);
+	local cutHairOption = menu:addOption(getText("ContextMenu_CutCorpseHair"), playerObj, ContextMenu.onCutHair, context, corpse, scissors);
+
+	
+	ISWorldObjectContextMenu.initWorldItemHighlightOption(shaveHairOption, corpse)
+	ISWorldObjectContextMenu.initWorldItemHighlightOption(shaveRazorHairOption, corpse)
+	ISWorldObjectContextMenu.initWorldItemHighlightOption(cutHairOption, corpse)
+
+	local tooltipScissorsDesc = getText("ContextMenu_HairCutThisWillCut")
+	local tooltipDesc = getText("ContextMenu_HairCutThisWillCut")
+	
+	local beardStyleData = CorpseHairCuttingUtils.getBeardStyle("")
+	local hairStyleData = CorpseHairCuttingUtils.getHairStyle(corpse:getHumanVisual():getHairModel());
+	
+	if not corpse:isFemale() then
+		beardStyleData = CorpseHairCuttingUtils.getBeardStyle(corpse:getHumanVisual():getBeardModel())
+	end
+	
+	if hairStyleData.length > CorpseHairCuttingUtils.hairLengths.s then
+		tooltipScissorsDesc = tooltipScissorsDesc .. " \n<INDENT:8><RGB:1,1,1>- " .. getText("ContextMenu_HairCutHair")
+	else
+		tooltipScissorsDesc = tooltipScissorsDesc .. " \n<INDENT:8><RGB:1,0,0>- " .. getText("ContextMenu_HairCutHair") .. " (".. getText("ContextMenu_TooShort") .. ")"
+	end
+	
+	if beardStyleData.length > CorpseHairCuttingUtils.hairLengths.s then
+		tooltipScissorsDesc = tooltipScissorsDesc .. " \n<INDENT:8><RGB:1,1,1>- " .. getText("ContextMenu_HairCutBeard")
+	elseif beardStyleData.length > 0 then
+		tooltipScissorsDesc = tooltipScissorsDesc .. " \n<INDENT:8><RGB:1,0,0>- " .. getText("ContextMenu_HairCutBeard") .. " (".. getText("ContextMenu_TooShort") .. ")"
+	else
+		tooltipScissorsDesc = tooltipScissorsDesc .. " \n<INDENT:8><RGB:1,0,0>- " .. getText("ContextMenu_HairCutBeard") .. " (".. getText("ContextMenu_IsBeardless") .. ")"
+	end
+	
+	if hairStyleData.length > 0 then
+		tooltipDesc = tooltipDesc .. " \n<INDENT:8><RGB:1,1,1>- " .. getText("ContextMenu_HairCutHair")
+	else
+		tooltipDesc = tooltipDesc .. " \n<INDENT:8><RGB:1,0,0>- " .. getText("ContextMenu_HairCutHair") .. " (".. getText("ContextMenu_IsBald") .. ")"
+	end
+	
+	if beardStyleData.length > 0 then
+		tooltipDesc = tooltipDesc .. " \n<INDENT:8><RGB:1,1,1>- " .. getText("ContextMenu_HairCutBeard")
+	else
+		tooltipDesc = tooltipDesc .. " \n<INDENT:8><RGB:1,0,0>- " .. getText("ContextMenu_HairCutBeard") .. " (".. getText("ContextMenu_IsBeardless") .. ")"
+	end
+
+	local scissorsTooltip = ISWorldObjectContextMenu.addToolTip()
+	scissorsTooltip.description = tooltipScissorsDesc .. " <BR><INDENT:0><RGB:1,0.7,0>" .. getText("ContextMenu_HairCutWithScissorsTooltip")
+	scissorsTooltip.maxLineWidth = 512
+	cutHairOption.toolTip = scissorsTooltip
+	
+	local shaveTooltip = ISWorldObjectContextMenu.addToolTip()
+	shaveTooltip.description = tooltipDesc
+	shaveTooltip.maxLineWidth = 512
+	
+	shaveHairOption.toolTip = shaveTooltip
+	shaveRazorHairOption.toolTip = shaveTooltip
+
+	if not shear then
+		shaveHairOption.notAvailable = true;
+		
+		local notShearTooltip = ISWorldObjectContextMenu.addToolTip()
+		notShearTooltip.description = "<RGB:1,0,0> " .. getText("ContextMenu_HairShearRequired")
+		
+		shaveHairOption.toolTip = notShearTooltip
+	end
+	if not scissors then
+		cutHairOption.notAvailable = true;
+		
+		local notScissorsTooltip = ISWorldObjectContextMenu.addToolTip()
+		notScissorsTooltip.description = "<RGB:1,0,0> " .. getText("ContextMenu_HairScissorsRequired")
+		
+		cutHairOption.toolTip = notScissorsTooltip
+	end
+	if not razor then
+		shaveRazorHairOption.notAvailable = true;
+		
+		local notRazorTooltip = ISWorldObjectContextMenu.addToolTip()
+		notRazorTooltip.description = "<RGB:1,0,0> " .. getText("ContextMenu_HairRazorRequired")
+		
+		shaveRazorHairOption.toolTip = notRazorTooltip
+	end
+
+	if hairStyleData.canBeCollected == false and beardStyleData.canBeCollected == false then
+		shaveHairOption.notAvailable = true
+		cutHairOption.notAvailable = true
+		shaveRazorHairOption.notAvailable = true
+		
+		local cantBeCollectedTooltip = ISWorldObjectContextMenu.addToolTip()
+		cantBeCollectedTooltip.description = "<RGB:1,0,0> " .. getText("ContextMenu_HairCantBeCollected")
+		
+		shaveHairOption.toolTip = cantBeCollectedTooltip
+		cutHairOption.toolTip = cantBeCollectedTooltip
+		shaveRazorHairOption.toolTip = cantBeCollectedTooltip
+		
+	elseif hairStyleData.length <= CorpseHairCuttingUtils.hairLengths.s and beardStyleData.length <= CorpseHairCuttingUtils.hairLengths.s then
+		cutHairOption.notAvailable = true;
+		
+		local tooshortTooltip = ISWorldObjectContextMenu.addToolTip()
+		tooshortTooltip.description = "<RGB:1,0,0> " .. getText("ContextMenu_HairTooShort")
+		
+		cutHairOption.toolTip = tooshortTooltip
+	end
+end
 
 function ContextMenu.addOnCutHairCorpseOption(player, context, worldObjects, test)
 
 	local playerObj = getSpecificPlayer(player)
-	local playerInv = playerObj:getInventory();
-	local pickedCorpse = IsoObjectPicker.Instance:PickCorpse(getMouseX(), getMouseY())
+	local playerInv = playerObj:getInventory()
+
+	local shear = playerInv:getFirstEvalRecurse(predicateShear)
+	local scissors = playerInv:getFirstEvalRecurse(predicateScissors)
+	local razor = playerInv:getFirstEvalRecurse(predicateRazor)
 	
-	if not pickedCorpse then return false end
+	if playerObj:getVehicle() then return false end
+		
+	if not shear and not scissors and not razor then return false end
+
+	local body = nil
 	
-	if isDebugEnabled() then
-		local debugOption = context:addOption("Debug Hair", worldObjects, nil);
-		
-		local debugMenu = ISContextMenu:getNew(context)
-		context:addSubMenu(debugOption, debugMenu)
-		
-		local debugHairStylesOption = debugMenu:addOption("Styles", worldObjects, nil);
-		local debugHairStylesMenu = ISContextMenu:getNew(context)
-		context:addSubMenu(debugHairStylesOption, debugHairStylesMenu)
-		
-		debugHairStylesMenu:addGetUpOption("None", playerObj, ContextMenu.onDebugHairStyle, pickedCorpse, "")
-		
-		local hairStyles = getAllHairStyles(pickedCorpse:isFemale())
-		for i=1,hairStyles:size() do
-			debugHairStylesMenu:addGetUpOption(hairStyles:get(i - 1), playerObj, ContextMenu.onDebugHairStyle, pickedCorpse, hairStyles:get(i - 1))
-		end
-		
-		
+	local wx = IsoUtils.XToIso(getMouseX(), getMouseY(), 0)
+	local wy = IsoUtils.YToIso(getMouseX(), getMouseY(), 0)
+	local wz = playerObj:getZ()
+
+	local square = getCell():getGridSquare(math.floor(wx), math.floor(wy), wz)
+
+	local corpses = {}
+	local corpses2 = square:getStaticMovingObjects()
+
+	for i=1,corpses2:size() do
+		table.insert(corpses, corpses2:get(i-1))
 	end
-	
-	if pickedCorpse:isAnimal() then
-		-- TODO: Add option to get fur tuft
-	else
-			
-		local shear = playerInv:getFirstEvalRecurse(predicateShear)
-		local scissors = playerInv:getFirstEvalRecurse(predicateScissors)
-		local razor = playerInv:getFirstEvalRecurse(predicateRazor)
-		
-		if not shear and not scissors and not razor then return false end
-		
-		local getHairOption = context:addOption(getText("ContextMenu_CollectHair"), worldObjects, nil);
-		
+
+	for d=1,8 do
+		local square2 = square:getAdjacentSquare(IsoDirections.fromIndex(d-1))
+		if square2 then
+			local corpses2 = square2:getStaticMovingObjects()
+			for i=1,corpses2:size() do
+				table.insert(corpses, corpses2:get(i-1))
+			end
+		end
+	end
+
+	if #corpses == 1 then
+
+		local cutHairOption = context:addOption(getText("ContextMenu_CollectHair"), worldObjects, nil);
 		local cutHairMenu = ISContextMenu:getNew(context)
-		context:addSubMenu(getHairOption, cutHairMenu)
-		
-		local shaveHairOption = cutHairMenu:addGetUpOption(getText("ContextMenu_ShaveCorpseHair"), playerObj, ContextMenu.onCutHair, pickedCorpse, shear);
-		local shaveRazorHairOption = cutHairMenu:addGetUpOption(getText("ContextMenu_ShaveRazorCorpseHair"), playerObj, ContextMenu.onCutHair, pickedCorpse, razor);
-		local cutHairOption = cutHairMenu:addGetUpOption(getText("ContextMenu_CutCorpseHair"), playerObj, ContextMenu.onCutHair, pickedCorpse, scissors);
-		
-		local tooltipScissorsDesc = getText("ContextMenu_HairCutThisWillCut")
-		local tooltipDesc = getText("ContextMenu_HairCutThisWillCut")
-		
-		local beardStyleData = CorpseHairCuttingUtils.getBeardStyle("")
-		local hairStyleData = CorpseHairCuttingUtils.getHairStyle(pickedCorpse:getHumanVisual():getHairModel());
-		
-		if not pickedCorpse:isFemale() then
-			beardStyleData = CorpseHairCuttingUtils.getBeardStyle(pickedCorpse:getHumanVisual():getBeardModel())
+		context:addSubMenu(cutHairOption, cutHairMenu)
+
+		addCutHairOptions(playerObj, context, cutHairMenu, corpses[1], shear, razor, scissors)
+
+		ISWorldObjectContextMenu.initWorldItemHighlightOption(cutHairOption, corpses[1])
+
+	elseif #corpses > 1 then
+
+        table.sort(corpses, function(a, b)
+			-- Récupérer infos cheveux/barbe collectables pour a
+			local beardA = CorpseHairCuttingUtils.getBeardStyle("")
+			local hairA = CorpseHairCuttingUtils.getHairStyle(a:getHumanVisual():getHairModel())
+			if not a:isFemale() then
+				beardA = CorpseHairCuttingUtils.getBeardStyle(a:getHumanVisual():getBeardModel())
+			end
+			local canCollectA = hairA.canBeCollected ~= false or beardA.canBeCollected ~= false
+
+			-- Même chose pour b
+			local beardB = CorpseHairCuttingUtils.getBeardStyle("")
+			local hairB = CorpseHairCuttingUtils.getHairStyle(b:getHumanVisual():getHairModel())
+			if not b:isFemale() then
+				beardB = CorpseHairCuttingUtils.getBeardStyle(b:getHumanVisual():getBeardModel())
+			end
+			local canCollectB = hairB.canBeCollected ~= false or beardB.canBeCollected ~= false
+
+			-- Si a n'a pas de cheveux/barbe collectables et b oui, alors b < a (b avant a)
+			if canCollectA ~= canCollectB then
+				return canCollectA -- true < false, donc true en premier, donc canCollectA=true en premier
+			end
+
+			-- Sinon, tri par distance au carré (plus rapide que distance normale)
+			return a:DistToSquared(playerObj) < b:DistToSquared(playerObj)
+		end)
+
+		local cutHairOption = context:addOption(getText("ContextMenu_CollectHair"), worldObjects, nil);
+		local cutHairMenu = ISContextMenu:getNew(context)
+		context:addSubMenu(cutHairOption, cutHairMenu)
+
+		for _,corpse in ipairs(corpses) do
+
+			local beardStyleData = CorpseHairCuttingUtils.getBeardStyle("")
+			local hairStyleData = CorpseHairCuttingUtils.getHairStyle(corpse:getHumanVisual():getHairModel());
+			
+			if not corpse:isFemale() then
+				beardStyleData = CorpseHairCuttingUtils.getBeardStyle(corpse:getHumanVisual():getBeardModel())
+			end
+			
+			local corpseOption = cutHairMenu:addOption(getText("IGUI_ItemCat_Corpse"), worldObjects, nil);
+
+			if hairStyleData.canBeCollected == false and beardStyleData.canBeCollected == false then
+				corpseOption.notAvailable = true
+				
+				local cantBeCollectedTooltip = ISWorldObjectContextMenu.addToolTip()
+				cantBeCollectedTooltip.description = "<RGB:1,0,0> " .. getText("ContextMenu_HairCantBeCollected")
+				
+				corpseOption.toolTip = cantBeCollectedTooltip
+				
+			else
+				local corpseMenu = ISContextMenu:getNew(context)
+				context:addSubMenu(corpseOption, corpseMenu)
+
+				addCutHairOptions(playerObj, context, corpseMenu, corpse, shear, razor, scissors)
+			end
+
+			
+
+			ISWorldObjectContextMenu.initWorldItemHighlightOption(corpseOption, corpse)
 		end
-		
-		if hairStyleData.length > CorpseHairCuttingUtils.hairLengths.s then
-			tooltipScissorsDesc = tooltipScissorsDesc .. " \n<INDENT:8><RGB:1,1,1>- " .. getText("ContextMenu_HairCutHair")
-		else
-			tooltipScissorsDesc = tooltipScissorsDesc .. " \n<INDENT:8><RGB:1,0,0>- " .. getText("ContextMenu_HairCutHair") .. " (".. getText("ContextMenu_TooShort") .. ")"
-		end
-		
-		if beardStyleData.length > CorpseHairCuttingUtils.hairLengths.s then
-			tooltipScissorsDesc = tooltipScissorsDesc .. " \n<INDENT:8><RGB:1,1,1>- " .. getText("ContextMenu_HairCutBeard")
-		elseif beardStyleData.length > 0 then
-			tooltipScissorsDesc = tooltipScissorsDesc .. " \n<INDENT:8><RGB:1,0,0>- " .. getText("ContextMenu_HairCutBeard") .. " (".. getText("ContextMenu_TooShort") .. ")"
-		else
-			tooltipScissorsDesc = tooltipScissorsDesc .. " \n<INDENT:8><RGB:1,0,0>- " .. getText("ContextMenu_HairCutBeard") .. " (".. getText("ContextMenu_IsBeardless") .. ")"
-		end
-		
-		if hairStyleData.length > 0 then
-			tooltipDesc = tooltipDesc .. " \n<INDENT:8><RGB:1,1,1>- " .. getText("ContextMenu_HairCutHair")
-		else
-			tooltipDesc = tooltipDesc .. " \n<INDENT:8><RGB:1,0,0>- " .. getText("ContextMenu_HairCutHair") .. " (".. getText("ContextMenu_IsBald") .. ")"
-		end
-		
-		if beardStyleData.length > 0 then
-			tooltipDesc = tooltipDesc .. " \n<INDENT:8><RGB:1,1,1>- " .. getText("ContextMenu_HairCutBeard")
-		else
-			tooltipDesc = tooltipDesc .. " \n<INDENT:8><RGB:1,0,0>- " .. getText("ContextMenu_HairCutBeard") .. " (".. getText("ContextMenu_IsBeardless") .. ")"
-		end
-		
-		local scissorsTooltip = ISWorldObjectContextMenu.addToolTip()
-		scissorsTooltip.description = tooltipScissorsDesc .. " <BR><INDENT:0><RGB:1,0.7,0>" .. getText("ContextMenu_HairCutWithScissorsTooltip")
-		scissorsTooltip.maxLineWidth = 512
-		cutHairOption.toolTip = scissorsTooltip
-		
-		local shaveTooltip = ISWorldObjectContextMenu.addToolTip()
-		shaveTooltip.description = tooltipDesc
-		shaveTooltip.maxLineWidth = 512
-		
-		shaveHairOption.toolTip = shaveTooltip
-		shaveRazorHairOption.toolTip = shaveTooltip
-		
-		if not shear then
-			shaveHairOption.notAvailable = true;
-			
-			local notShearTooltip = ISWorldObjectContextMenu.addToolTip()
-            notShearTooltip.description = "<RGB:1,0,0> " .. getText("ContextMenu_HairShearRequired")
-			
-			shaveHairOption.toolTip = notShearTooltip
-		end
-		if not scissors then
-			cutHairOption.notAvailable = true;
-			
-			local notScissorsTooltip = ISWorldObjectContextMenu.addToolTip()
-            notScissorsTooltip.description = "<RGB:1,0,0> " .. getText("ContextMenu_HairScissorsRequired")
-			
-			cutHairOption.toolTip = notScissorsTooltip
-		end
-		if not razor then
-			shaveRazorHairOption.notAvailable = true;
-			
-			local notRazorTooltip = ISWorldObjectContextMenu.addToolTip()
-            notRazorTooltip.description = "<RGB:1,0,0> " .. getText("ContextMenu_HairRazorRequired")
-			
-			shaveRazorHairOption.toolTip = notRazorTooltip
-		end
-		
-		
-		if hairStyleData.canBeCollected == false and beardStyleData.canBeCollected == false then
-			shaveHairOption.notAvailable = true
-			cutHairOption.notAvailable = true
-			shaveRazorHairOption.notAvailable = true
-			
-			local cantBeCollectedTooltip = ISWorldObjectContextMenu.addToolTip()
-            cantBeCollectedTooltip.description = "<RGB:1,0,0> " .. getText("ContextMenu_HairCantBeCollected")
-			
-			shaveHairOption.toolTip = cantBeCollectedTooltip
-			cutHairOption.toolTip = cantBeCollectedTooltip
-			shaveRazorHairOption.toolTip = cantBeCollectedTooltip
-			
-		elseif hairStyleData.length <= CorpseHairCuttingUtils.hairLengths.s and beardStyleData.length <= CorpseHairCuttingUtils.hairLengths.s then
-			cutHairOption.notAvailable = true;
-			
-			local tooshortTooltip = ISWorldObjectContextMenu.addToolTip()
-            tooshortTooltip.description = "<RGB:1,0,0> " .. getText("ContextMenu_HairTooShort")
-			
-			cutHairOption.toolTip = tooshortTooltip
-		end
-		
 	end
-	
+
 end
 
 function ContextMenu.addCutWigsOption(player, context, items)
