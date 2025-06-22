@@ -7,12 +7,22 @@ require "TimedActions/ISBaseTimedAction"
 ISCorpseHairCutting = ISBaseTimedAction:derive("ISCorpseHairCutting");
 
 function ISCorpseHairCutting:isValid()
+	if self.corpse:getStaticMovingObjectIndex() < 0 then
+        return false
+    end
     return true;
 end
 
+function ISCorpseHairCutting:waitToStart()
+    self.character:faceThisObject(self.corpse)
+    return self.character:shouldBeTurning()
+end
+
 function ISCorpseHairCutting:update()
-   	self.item:setJobDelta(self:getJobDelta());
-    self.character:setMetabolicTarget(Metabolics.LightWork);
+   	self.item:setJobDelta(self:getJobDelta())
+    self.character:faceThisObject(self.corpse)
+
+    self.character:setMetabolicTarget(Metabolics.LightWork)
 end
 
 function ISCorpseHairCutting:start()
