@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+    <m_MaleModel>skinned\hair\Bob_Hair_PartingRight</m_MaleModel>
+    <m_FemaleModel>skinned\hair\Bob_Hair_PartingRight</m_FemaleModel>
+    <m_GUID>fpw9x2y3-83ab-929a-e5c3-890gr7s8t901</m_GUID>
+    <m_Static>false</m_Static>
+	<m_AllowRandomTint>true</m_AllowRandomTint>
+    <m_AttachBone></m_AttachBone>
+    <m_HatCategory>nohair</m_HatCategory>
+    <m_MasksFolder>media/textures/Clothes/Hat/Masks</m_MasksFolder>
+	<textureChoices>clothes/wigs/F_Hair_White</textureChoices>
+</clothingItem>

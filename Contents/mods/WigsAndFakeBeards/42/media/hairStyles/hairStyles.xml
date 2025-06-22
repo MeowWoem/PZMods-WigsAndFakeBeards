@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hairStyles>
+	
+	<female>
+		<name>Short</name>
+		<model>skinned\hair\m_hair_short</model>
+		<texture>F_Hair_White</texture>
+		<alternate category="default" style="HatCurly" />
+		<alternate category="Group01" style="HatCurly" />
+		<alternate category="Group02" style="HatCurly" />
+		<alternate category="Group04" style="HatCurly" />
+		<alternate category="Group05" style="ShortCurly" />
+		<level>1</level>
+		<trimChoices>HatCurly</trimChoices>
+		<trimChoices>Fresh</trimChoices>
+	</female>
+	
+</hairStyles>

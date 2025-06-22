@@ -1,0 +1,458 @@
+module Base
+{
+	model HairTuftTINT
+	{
+		mesh = WorldItems/HairTuft,
+		texture = WorldItems/HairTuft,
+		scale = 1,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 90.0000 0.0000 90.0000,
+		}
+	}
+	model WigBobHairMullet
+	{
+		mesh = WorldItems/Wig_Bob_Hair_Mullet,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigBobHairPonyTailBraided
+	{
+		mesh = WorldItems/Wig_Bob_Hair_PonyTailBraided,
+		texture = clothes/wigs/F_Hair_Braids,
+		scale = 0.01,
+	}
+	model WigBobHairShortCurly
+	{
+		mesh = WorldItems/Wig_Bob_Hair_ShortCurly,
+		texture = clothes/wigs/F_HairCurly_Short,
+		scale = 0.009,
+	}
+	model WigBobHairBraided01
+	{
+		mesh = WorldItems/Wig_Bob_Hair_Braided01,
+		texture = clothes/wigs/F_Hair_Braids,
+		scale = 0.01,
+	}
+	model WigBobHairBuffont
+	{
+		mesh = WorldItems/Wig_Bob_Hair_Buffont,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigBobHairCornrows
+	{
+		mesh = WorldItems/Wig_Bob_Hair_Cornrows,
+		texture = clothes/wigs/F_HairCurly_Long,
+		scale = 0.01,
+	}
+	model WigBobHairFabianBraided
+	{
+		mesh = WorldItems/Wig_Bob_Hair_FabianBraided,
+		texture = clothes/wigs/F_Hair_Braids,
+		scale = 0.01,
+	}
+	model WigBobHairFabianCurly
+	{
+		mesh = WorldItems/Wig_Bob_Hair_FabianCurly,
+		texture = clothes/wigs/F_HairCurly_Long,
+		scale = 0.01,
+	}
+	model WigBobHairFlatTop
+	{
+		mesh = WorldItems/Wig_Bob_Hair_FlatTop,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigBobHairFresh
+	{
+		mesh = WorldItems/Wig_Bob_Hair_Fresh,
+		texture = clothes/wigs/F_HairCurly_Short,
+		scale = 0.01,
+	}
+	model WigBobHairGreasedBack
+	{
+		mesh = WorldItems/Wig_Bob_Hair_GreasedBack,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigBobHairGrungey
+	{
+		mesh = WorldItems/Wig_Bob_Hair_Grungey,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigBobHairGrungeyBehindEar
+	{
+		mesh = WorldItems/Wig_Bob_Hair_GrungeyBehindEar,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigBobHairHatLong
+	{
+		mesh = WorldItems/Wig_Bob_Hair_HatLong,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigBobHairHatLongBraided
+	{
+		mesh = WorldItems/Wig_Bob_Hair_HatLongBraided,
+		texture = clothes/wigs/F_Hair_Braids,
+		scale = 0.01,
+	}
+	model WigBobHairHatLongCurly
+	{
+		mesh = WorldItems/Wig_Bob_Hair_HatLongCurly,
+		texture = clothes/wigs/F_HairCurly_Long,
+		scale = 0.01,
+	}
+	model WigBobHairLongBraided
+	{
+		mesh = WorldItems/Wig_Bob_Hair_LongBraided,
+		texture = clothes/wigs/F_Hair_Braids,
+		scale = 0.01,
+	}
+	model WigBobHairMessyCurly
+	{
+		mesh = WorldItems/Wig_Bob_Hair_MessyCurly,
+		texture = clothes/wigs/F_HairCurly_Short,
+		scale = 0.01,
+	}
+	model WigBobHairMulletCurly
+	{
+		mesh = WorldItems/Wig_Bob_Hair_MulletCurly,
+		texture = clothes/wigs/F_HairCurly_Long,
+		scale = 0.01,
+	}
+	model WigBobHairShortHatCurly
+	{
+		mesh = WorldItems/Wig_Bob_Hair_ShortHatCurly,
+		texture = clothes/wigs/F_HairCurly_Short,
+		scale = 0.01,
+	}
+	model WigBobHairSpike
+	{
+		mesh = WorldItems/Wig_Bob_Hair_Spike,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigFHairBack
+	{
+		mesh = WorldItems/Wig_F_Hair_Back,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigFHairBob
+	{
+		mesh = WorldItems/Wig_F_Hair_Bob,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigFHairBun
+	{
+		mesh = WorldItems/Wig_F_Hair_Bun,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigFHairDemi
+	{
+		mesh = WorldItems/Wig_F_Hair_Demi,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigFHairHat
+	{
+		mesh = WorldItems/Wig_F_Hair_Hat,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigFHairKate
+	{
+		mesh = WorldItems/Wig_F_Hair_Kate,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigFHairLong
+	{
+		mesh = WorldItems/Wig_F_Hair_Long,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigFHairLong2
+	{
+		mesh = WorldItems/Wig_F_Hair_Long2,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigFHairOverEye
+	{
+		mesh = WorldItems/Wig_F_Hair_OverEye,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigFHairPonyTail
+	{
+		mesh = WorldItems/Wig_F_Hair_PonyTail,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigKateHairBobCurly
+	{
+		mesh = WorldItems/Wig_Kate_Hair_BobCurly,
+		texture = clothes/wigs/F_HairCurly_Long,
+		scale = 0.01,
+	}
+	model WigKateHairBunCurly
+	{
+		mesh = WorldItems/Wig_Kate_Hair_BunCurly,
+		texture = clothes/wigs/F_HairCurly_Long,
+		scale = 0.01,
+	}
+	model WigKateHairGrungey02
+	{
+		mesh = WorldItems/Wig_Kate_Hair_Grungey02,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigKateHairGrungeyParting
+	{
+		mesh = WorldItems/Wig_Kate_Hair_GrungeyParting,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigKateHairHatCurly
+	{
+		mesh = WorldItems/Wig_Kate_Hair_HatCurly,
+		texture = clothes/wigs/F_HairCurly_Long,
+		scale = 0.01,
+	}
+	model WigKateHairKateCurly
+	{
+		mesh = WorldItems/Wig_Kate_Hair_KateCurly,
+		texture = clothes/wigs/F_HairCurly_Long,
+		scale = 0.01,
+	}
+	model WigKateHairLong2Curly
+	{
+		mesh = WorldItems/Wig_Kate_Hair_Long2Curly,
+		texture = clothes/wigs/F_HairCurly_Long,
+		scale = 0.01,
+	}
+	model WigBobHairLibertySpikes
+	{
+		mesh = WorldItems/Wig_Bob_Hair_LibertySpikes,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigKateHairLongBraid
+	{
+		mesh = WorldItems/Wig_Kate_Hair_LongBraid,
+		texture = clothes/wigs/F_Hair_Braids,
+		scale = 0.01,
+	}
+	model WigKateHairLongBraid02
+	{
+		mesh = WorldItems/Wig_Kate_Hair_LongBraid02,
+		texture = clothes/wigs/F_Hair_Braids,
+		scale = 0.01,
+	}
+	model WigKateHairLongCurly
+	{
+		mesh = WorldItems/Wig_Kate_Hair_LongCurly,
+		texture = clothes/wigs/F_HairCurly_Long,
+		scale = 0.01,
+	}
+	model WigKateHairMohawkFan
+	{
+		mesh = WorldItems/Wig_Kate_Hair_MohawkFan,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigKateHairMohawkFlat
+	{
+		mesh = WorldItems/Wig_Kate_Hair_MohawkFlat,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigKateHairMohawkShort
+	{
+		mesh = WorldItems/Wig_Kate_Hair_MohawkShort,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigKateHairMohawkSpike
+	{
+		mesh = WorldItems/Wig_Kate_Hair_MohawkSpike,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigKateHairOverEyeCurly
+	{
+		mesh = WorldItems/Wig_Kate_Hair_OverEyeCurly,
+		texture = clothes/wigs/F_HairCurly_Long,
+		scale = 0.01,
+	}
+	model WigKateHairOverEyeLeft
+	{
+		mesh = WorldItems/Wig_Kate_Hair_OverEyeLeft,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigKateHairPartingCentre
+	{
+		mesh = WorldItems/Wig_Kate_Hair_PartingCentre,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigKateHairPartingCentreLong
+	{
+		mesh = WorldItems/Wig_Kate_Hair_PartingCentreLong,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigKateHairPartingLeft
+	{
+		mesh = WorldItems/Wig_Kate_Hair_PartingLeft,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigKateHairPartingRight
+	{
+		mesh = WorldItems/Wig_Kate_Hair_PartingRight,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigKateHairRachel
+	{
+		mesh = WorldItems/Wig_Kate_Hair_Rachel,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigKateHairRachelCurly
+	{
+		mesh = WorldItems/Wig_Kate_Hair_RachelCurly,
+		texture = clothes/wigs/F_HairCurly_Long,
+		scale = 0.01,
+	}
+	model WigKateHairTopMop
+	{
+		mesh = WorldItems/Wig_Kate_Hair_TopMop,
+		texture = clothes/wigs/F_HairCurly_Short,
+		scale = 0.01,
+	}
+	model WigMHairBaldspot
+	{
+		mesh = WorldItems/Wig_M_Hair_Baldspot,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigMHairCrewCut
+	{
+		mesh = WorldItems/Wig_M_Hair_CrewCut,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigMHairDonny
+	{
+		mesh = WorldItems/Wig_M_Hair_Donny,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigMHairFabian
+	{
+		mesh = WorldItems/Wig_M_Hair_Fabian,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigMHairMessy
+	{
+		mesh = WorldItems/Wig_M_Hair_Messy,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigMHairMetal
+	{
+		mesh = WorldItems/Wig_M_Hair_Metal,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigMHairPicard
+	{
+		mesh = WorldItems/Wig_M_Hair_Picard,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigMHairRecede
+	{
+		mesh = WorldItems/Wig_M_Hair_Recede,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigMHairShort
+	{
+		mesh = WorldItems/Wig_M_Hair_Short,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model WigMHairShortHat
+	{
+		mesh = WorldItems/Wig_M_Hair_ShortHat,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model FakeBeardBobBeardOnly
+	{
+		mesh = WorldItems/FakeBeard_Bob_Beard_Only,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model FakeBeardBobBeardChin
+	{
+		mesh = WorldItems/FakeBeard_Bob_Beard_Chin,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model FakeBeardBobBeardChops
+	{
+		mesh = WorldItems/FakeBeard_Bob_Beard_Chops,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model FakeBeardBobBeardFull
+	{
+		mesh = WorldItems/FakeBeard_Bob_Beard_Full,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model FakeBeardBobBeardGoatee
+	{
+		mesh = WorldItems/FakeBeard_Bob_Beard_Goatee,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model FakeBeardBobBeardLong
+	{
+		mesh = WorldItems/FakeBeard_Bob_Beard_Long,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model FakeBeardBobBeardLongScruffy
+	{
+		mesh = WorldItems/FakeBeard_Bob_Beard_LongScruffy,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model FakeBeardBobBeardMoustache
+	{
+		mesh = WorldItems/FakeBeard_Bob_Beard_Moustache,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+	model FakeBeardBobBeardPointyChin
+	{
+		mesh = WorldItems/FakeBeard_Bob_Beard_PointyChin,
+		texture = clothes/wigs/F_Hair_White,
+		scale = 0.01,
+	}
+}

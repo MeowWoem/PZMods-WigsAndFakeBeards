@@ -1,0 +1,954 @@
+module Base
+{
+    item Wig_MaleHairMulletTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Male - Mullet,
+        ClothingItem = Wig_MaleHairMulletTINT,
+        WorldStaticModel = WigBobHairMullet,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_MaleHairBuffontTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Male - Buffont,
+        ClothingItem = Wig_MaleHairBuffontTINT,
+        WorldStaticModel = WigBobHairBuffont,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_MaleHairFabianBraidedTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Male - Fabian - Braided,
+        ClothingItem = Wig_MaleHairFabianBraidedTINT,
+        WorldStaticModel = WigBobHairFabianBraided,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_MaleHairFabianCurlyTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Male - Fabian - Curly,
+        ClothingItem = Wig_MaleHairFabianCurlyTINT,
+        WorldStaticModel = WigBobHairFabianCurly,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_MaleHairMessyCurlyTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Male - Messy - Curly,
+        ClothingItem = Wig_MaleHairMessyCurlyTINT,
+        WorldStaticModel = WigBobHairMessyCurly,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_MaleHairMulletCurlyTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Male - Mullet - Curly,
+        ClothingItem = Wig_MaleHairMulletCurlyTINT,
+        WorldStaticModel = WigBobHairMulletCurly,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_MaleHairShortHatCurlyTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Male - Short Hat - Curly,
+        ClothingItem = Wig_MaleHairShortHatCurlyTINT,
+        WorldStaticModel = WigBobHairShortHatCurly,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_MaleHairBaldspotTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Male - Baldspot,
+        ClothingItem = Wig_MaleHairBaldspotTINT,
+        WorldStaticModel = WigMHairBaldspot,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_MaleHairCrewCutTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Male - Crew Cut,
+        ClothingItem = Wig_MaleHairCrewCutTINT,
+        WorldStaticModel = WigMHairCrewCut,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_MaleHairDonnyTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Male - Donny,
+        ClothingItem = Wig_MaleHairDonnyTINT,
+        WorldStaticModel = WigMHairDonny,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_MaleHairFabianTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Male - Fabian,
+        ClothingItem = Wig_MaleHairFabianTINT,
+        WorldStaticModel = WigMHairFabian,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_MaleHairMessyTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Male - Messy,
+        ClothingItem = Wig_MaleHairMessyTINT,
+        WorldStaticModel = WigMHairMessy,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_MaleHairMetalTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Male - Metal,
+        ClothingItem = Wig_MaleHairMetalTINT,
+        WorldStaticModel = WigMHairMetal,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_MaleHairPicardTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Male - Picard,
+        ClothingItem = Wig_MaleHairPicardTINT,
+        WorldStaticModel = WigMHairPicard,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_MaleHairRecedeTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Male - Recede,
+        ClothingItem = Wig_MaleHairRecedeTINT,
+        WorldStaticModel = WigMHairRecede,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_MaleHairShortTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Unisex - Short,
+        ClothingItem = Wig_MaleHairShortTINT,
+        WorldStaticModel = WigMHairShort,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_MaleHairShortHatTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Male - Short Hat,
+        ClothingItem = Wig_MaleHairShortHatTINT,
+        WorldStaticModel = WigMHairShortHat,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairBackTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Female - Back,
+        ClothingItem = Wig_FemaleHairBackTINT,
+        WorldStaticModel = WigFHairBack,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairBobTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Female - Bob,
+        ClothingItem = Wig_FemaleHairBobTINT,
+        WorldStaticModel = WigFHairBob,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairBunTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Female - Bun,
+        ClothingItem = Wig_FemaleHairBunTINT,
+        WorldStaticModel = WigFHairBun,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairDemiTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Female - Demi,
+        ClothingItem = Wig_FemaleHairDemiTINT,
+        WorldStaticModel = WigFHairDemi,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairHatTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Female - Hat,
+        ClothingItem = Wig_FemaleHairHatTINT,
+        WorldStaticModel = WigFHairHat,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairKateTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Female - Kate,
+        ClothingItem = Wig_FemaleHairKateTINT,
+        WorldStaticModel = WigFHairKate,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairLongTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Female - Long,
+        ClothingItem = Wig_FemaleHairLongTINT,
+        WorldStaticModel = WigFHairLong,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairLong2TINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Female - Long 2,
+        ClothingItem = Wig_FemaleHairLong2TINT,
+        WorldStaticModel = WigFHairLong2,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairOverEyeTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Female - Over Eye,
+        ClothingItem = Wig_FemaleHairOverEyeTINT,
+        WorldStaticModel = WigFHairOverEye,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairPonyTailTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Unisex - Pony Tail,
+        ClothingItem = Wig_FemaleHairPonyTailTINT,
+        WorldStaticModel = WigFHairPonyTail,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairSpikeTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Unisex - Spike,
+        ClothingItem = Wig_FemaleHairSpikeTINT,
+        WorldStaticModel = WigBobHairSpike,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairBobCurlyTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Female - Bob - Curly,
+        ClothingItem = Wig_FemaleHairBobCurlyTINT,
+        WorldStaticModel = WigKateHairBobCurly,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairBraided01TINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Unisex - Braided,
+        ClothingItem = Wig_FemaleHairBraided01TINT,
+        WorldStaticModel = WigBobHairBraided01,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairBunCurlyTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Female - Bun - Curly,
+        ClothingItem = Wig_FemaleHairBunCurlyTINT,
+        WorldStaticModel = WigKateHairBunCurly,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairCornrowsTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Unisex - Cornrows,
+        ClothingItem = Wig_FemaleHairCornrowsTINT,
+        WorldStaticModel = WigBobHairCornrows,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairFlatTopTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Unisex - Flat Top,
+        ClothingItem = Wig_FemaleHairFlatTopTINT,
+        WorldStaticModel = WigBobHairFlatTop,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairFreshTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Unisex - Fresh,
+        ClothingItem = Wig_FemaleHairFreshTINT,
+        WorldStaticModel = WigBobHairFresh,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairGreasedBackTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Unisex - Greased Back,
+        ClothingItem = Wig_FemaleHairGreasedBackTINT,
+        WorldStaticModel = WigBobHairGreasedBack,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairGrungeyTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Unisex - Grungey,
+        ClothingItem = Wig_FemaleHairGrungeyTINT,
+        WorldStaticModel = WigBobHairGrungey,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairGrungey02TINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Female - Grungey 2,
+        ClothingItem = Wig_FemaleHairGrungey02TINT,
+        WorldStaticModel = WigKateHairGrungey02,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairGrungeyBehindEarTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Unisex - Grungey Behind Ear,
+        ClothingItem = Wig_FemaleHairGrungeyBehindEarTINT,
+        WorldStaticModel = WigBobHairGrungeyBehindEar,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairGrungeyPartingTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Female - Grungey Parting,
+        ClothingItem = Wig_FemaleHairGrungeyPartingTINT,
+        WorldStaticModel = WigKateHairGrungeyParting,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairHatCurlyTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Female - Hat - Curly,
+        ClothingItem = Wig_FemaleHairHatCurlyTINT,
+        WorldStaticModel = WigKateHairHatCurly,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairHatLongTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Unisex - Hat Long,
+        ClothingItem = Wig_FemaleHairHatLongTINT,
+        WorldStaticModel = WigBobHairHatLong,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairHatLongBraidedTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Unisex - Hat Long - Braided,
+        ClothingItem = Wig_FemaleHairHatLongBraidedTINT,
+        WorldStaticModel = WigBobHairLongBraided,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairHatLongCurlyTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Unisex - Hat Long - Curly,
+        ClothingItem = Wig_FemaleHairHatLongCurlyTINT,
+        WorldStaticModel = WigBobHairHatLongCurly,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairKateCurlyTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Female - Kate - Curly,
+        ClothingItem = Wig_FemaleHairKateCurlyTINT,
+        WorldStaticModel = WigKateHairKateCurly,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairLibertySpikesTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Unisex - Liberty Spikes,
+        ClothingItem = Wig_FemaleHairLibertySpikesTINT,
+        WorldStaticModel = WigBobHairLibertySpikes,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairLong2CurlyTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Female - Long 2 - Curly,
+        ClothingItem = Wig_FemaleHairLong2CurlyTINT,
+        WorldStaticModel = WigKateHairLong2Curly,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairLongBraidTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Unisex - Long - Braided,
+        ClothingItem = Wig_FemaleHairLongBraidTINT,
+        WorldStaticModel = WigKateHairLongBraid,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairLongBraid02TINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Female - Long 2 - Braided,
+        ClothingItem = Wig_FemaleHairLongBraid02TINT,
+        WorldStaticModel = WigKateHairLongBraid02,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairLongCurlyTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Female - Long - Curly,
+        ClothingItem = Wig_FemaleHairLongCurlyTINT,
+        WorldStaticModel = WigKateHairLongCurly,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairMohawkFanTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Unisex - Mohawk Fan,
+        ClothingItem = Wig_FemaleHairMohawkFanTINT,
+        WorldStaticModel = WigKateHairMohawkFan,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairMohawkFlatTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Unisex - Mohawk Flat,
+        ClothingItem = Wig_FemaleHairMohawkFlatTINT,
+        WorldStaticModel = WigKateHairMohawkFlat,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairMohawkShortTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Unisex - Mohawk Short,
+        ClothingItem = Wig_FemaleHairMohawkShortTINT,
+        WorldStaticModel = WigKateHairMohawkShort,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairMohawkSpikeTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Unisex - Mohawk Spike,
+        ClothingItem = Wig_FemaleHairMohawkSpikeTINT,
+        WorldStaticModel = WigKateHairMohawkSpike,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairOverEyeCurlyTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Female - Over Eye - Curly,
+        ClothingItem = Wig_FemaleHairOverEyeCurlyTINT,
+        WorldStaticModel = WigKateHairOverEyeCurly,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairOverEyeLeftTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Female - Over Eye - Left,
+        ClothingItem = Wig_FemaleHairOverEyeLeftTINT,
+        WorldStaticModel = WigKateHairOverEyeLeft,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairPartingCentreTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Unisex - Parting Centre,
+        ClothingItem = Wig_FemaleHairPartingCentreTINT,
+        WorldStaticModel = WigKateHairPartingCentre,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairPartingCentreLongTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Unisex - Parting Centre Long,
+        ClothingItem = Wig_FemaleHairPartingCentreLongTINT,
+        WorldStaticModel = WigKateHairPartingCentreLong,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairPartingLeftTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Unisex - Parting Left,
+        ClothingItem = Wig_FemaleHairPartingLeftTINT,
+        WorldStaticModel = WigKateHairPartingLeft,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairPartingRightTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Unisex - Parting Right,
+        ClothingItem = Wig_FemaleHairPartingRightTINT,
+        WorldStaticModel = WigKateHairPartingRight,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairPonyTailBraidedTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Unisex - Pony Tail - Braided,
+        ClothingItem = Wig_FemaleHairPonyTailBraidedTINT,
+        WorldStaticModel = WigBobHairPonyTailBraided,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairRachelTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Female - Rachel,
+        ClothingItem = Wig_FemaleHairRachelTINT,
+        WorldStaticModel = WigKateHairRachel,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairRachelCurlyTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Female - Rachel - Curly,
+        ClothingItem = Wig_FemaleHairRachelCurlyTINT,
+        WorldStaticModel = WigKateHairRachelCurly,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item Wig_FemaleHairShortCurlyTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Unisex - Short - Curly,
+        ClothingItem = Wig_FemaleHairShortCurlyTINT,
+        WorldStaticModel = WigBobHairShortCurly,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+	
+    item Wig_FemaleHairTopMopTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Wig - Female - Top Mop,
+        ClothingItem = Wig_FemaleHairTopMopTINT,
+        WorldStaticModel = WigKateHairTopMop,
+        BodyLocation = Nose,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+	
+    item FakeBeard_BeardOnlyTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Fake Beard - Beard Only,
+        ClothingItem = FakeBeard_BeardOnlyTINT,
+        WorldStaticModel = FakeBeardBobBeardOnly,
+        BodyLocation = Mask,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item FakeBeard_ChinTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Fake Beard - Chin,
+        ClothingItem = FakeBeard_ChinTINT,
+        WorldStaticModel = FakeBeardBobBeardChin,
+        BodyLocation = Mask,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item FakeBeard_ChopsTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Fake Beard - Chops,
+        ClothingItem = FakeBeard_ChopsTINT,
+        WorldStaticModel = FakeBeardBobBeardChops,
+        BodyLocation = Mask,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item FakeBeard_FullTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Fake Beard - Full,
+        ClothingItem = FakeBeard_FullTINT,
+        WorldStaticModel = FakeBeardBobBeardFull,
+        BodyLocation = Mask,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item FakeBeard_GoateeTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Fake Beard - Goatee,
+        ClothingItem = FakeBeard_GoateeTINT,
+        WorldStaticModel = FakeBeardBobBeardGoatee,
+        BodyLocation = Mask,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item FakeBeard_LongTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Fake Beard - Long,
+        ClothingItem = FakeBeard_LongTINT,
+        WorldStaticModel = FakeBeardBobBeardLong,
+        BodyLocation = Mask,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item FakeBeard_LongScruffyTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Fake Beard - Long Scruffy,
+        ClothingItem = FakeBeard_LongScruffyTINT,
+        WorldStaticModel = FakeBeardBobBeardLongScruffy,
+        BodyLocation = Mask,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item FakeBeard_MoustacheTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Fake Beard - Moustache,
+        ClothingItem = FakeBeard_MoustacheTINT,
+        WorldStaticModel = FakeBeardBobBeardMoustache,
+        BodyLocation = Mask,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+    item FakeBeard_PointyChinTINT
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Fake Beard - Pointy Chin,
+        ClothingItem = FakeBeard_PointyChinTINT,
+        WorldStaticModel = FakeBeardBobBeardPointyChin,
+        BodyLocation = Mask,
+        Icon = Wig,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Weight = 0.1,
+    }
+}

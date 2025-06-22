@@ -1,0 +1,1863 @@
+module Base
+{
+	craftRecipe MakeWigMaleHairMullet
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+        SkillRequired = Tailoring:1,
+        xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 12 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_MaleHairMulletTINT,
+		}
+		
+	}
+	
+	craftRecipe MakeWigMaleHairBuffont
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 10 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_MaleHairBuffontTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigMaleHairFabianBraided
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 12 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_MaleHairFabianBraidedTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigMaleHairFabianCurly
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 12 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_MaleHairFabianCurlyTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigMaleHairMessyCurly
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 6 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_MaleHairMessyCurlyTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigMaleHairMulletCurly
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 12 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_MaleHairMulletCurlyTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigMaleHairShortHatCurly
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 6 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_MaleHairShortHatCurlyTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigMaleHairBaldspot
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 4 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_MaleHairBaldspotTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigMaleHairCrewCut
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 4 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_MaleHairCrewCutTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigMaleHairDonny
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 8 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_MaleHairDonnyTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigMaleHairFabian
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 12 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_MaleHairFabianTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigMaleHairMessy
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 6 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_MaleHairMessyTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigMaleHairMetal
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 12 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_MaleHairMetalTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigMaleHairPicard
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 2 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_MaleHairPicardTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigMaleHairRecede
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 6 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_MaleHairRecedeTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigMaleHairShort
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 6 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_MaleHairShortTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigMaleHairShortHat
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 6 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_MaleHairShortHatTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairBack
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 8 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairBackTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairBob
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 8 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairBobTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairBun
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 8 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairBunTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairDemi
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 4 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairDemiTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairHat
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 6 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairHatTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairKate
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 12 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairKateTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairLong
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 12 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairLongTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairLong2
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 12 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairLong2TINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairOverEye
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 8 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairOverEyeTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairPonyTail
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 10 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairPonyTailTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairSpike
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 6 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairSpikeTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairBobCurly
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 8 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairBobCurlyTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairBraided01
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 8 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairBraided01TINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairBunCurly
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 8 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairBunCurlyTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairCornrows
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 8 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairCornrowsTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairFlatTop
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 6 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairFlatTopTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairFresh
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 4 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairFreshTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairGreasedBack
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 6 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairGreasedBackTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairGrungey
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 8 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairGrungeyTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairGrungey02
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 8 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairGrungey02TINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairGrungeyBehindEar
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 8 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairGrungeyBehindEarTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairGrungeyParting
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 8 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairGrungeyPartingTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairHatCurly
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 6 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairHatCurlyTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairHatLong
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 12 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairHatLongTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairHatLongBraided
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 12 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairHatLongBraidedTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairHatLongCurly
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 12 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairHatLongCurlyTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairKateCurly
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 12 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairKateCurlyTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairLibertySpikes
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 10 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairLibertySpikesTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairLong2Curly
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 12 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairLong2CurlyTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairLongBraid
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 12 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairLongBraidTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairLongBraid02
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 12 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairLongBraid02TINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairLongCurly
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 12 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairLongCurlyTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairMohawkFan
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 8 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairMohawkFanTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairMohawkFlat
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 6 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairMohawkFlatTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairMohawkShort
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 4 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairMohawkShortTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairMohawkSpike
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 8 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairMohawkSpikeTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairOverEyeCurly
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 8 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairOverEyeCurlyTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairOverEyeLeft
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 8 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairOverEyeLeftTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairPartingCentre
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 6 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairPartingCentreTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairPartingCentreLong
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 8 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairPartingCentreLongTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairPartingLeft
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 6 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairPartingLeftTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairPartingRight
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 6 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairPartingRightTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairPonyTailBraided
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 10 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairPonyTailBraidedTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairRachel
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 10 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairRachelTINT,
+		}
+	}
+
+
+	craftRecipe MakeWigFemaleHairRachelCurly
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 10 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairRachelCurlyTINT,
+		}
+	}
+
+	craftRecipe MakeWigFemaleHairShortCurly
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 6 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairShortCurlyTINT,
+		}
+	}
+
+	craftRecipe MakeWigFemaleHairTopMop
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 8 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Wig_FemaleHairTopMopTINT,
+		}
+	}
+	
+	craftRecipe MakeFakeBeardOnly
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 4 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.FakeBeard_BeardOnlyTINT,
+		}
+	}
+	
+	craftRecipe MakeFakeBeardChin
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 2 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.FakeBeard_ChinTINT,
+		}
+	}
+	
+	craftRecipe MakeFakeBeardChops
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 4 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.FakeBeard_ChopsTINT,
+		}
+	}
+	
+	craftRecipe MakeFakeBeardFull
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 4 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.FakeBeard_FullTINT,
+		}
+	}
+	
+	craftRecipe MakeFakeBeardGoatee
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 2 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.FakeBeard_GoateeTINT,
+		}
+	}
+	
+	craftRecipe MakeFakeBeardLong
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 6 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.FakeBeard_LongTINT,
+		}
+	}
+	
+	craftRecipe MakeFakeBeardLongScruffy
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 6 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.FakeBeard_LongScruffyTINT,
+		}
+	}
+	
+	craftRecipe MakeFakeBeardMoustache
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 2 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.FakeBeard_MoustacheTINT,
+		}
+	}
+	
+	craftRecipe MakeFakeBeardPointyChin
+	{
+		timedAction = SewingCloth,
+		Time = 120,
+		Tags = AnySurfaceCraft,
+		SkillRequired = Tailoring:1,
+		xpAward = Tailoring:2,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromHairTuft,
+		inputs
+		{
+			item 2 [Base.HairTuft],
+			item 1 [Base.Leather_Crude_Small_Tan],
+			item 2 [Base.Thread],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.FakeBeard_PointyChinTINT,
+		}
+	}
+
+	
+	craftRecipe DyeWig
+	{
+		timedAction = SewingCloth,
+		Time = 45,
+		Tags = InHandCraft,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.InheritColorFromDye,
+		OnTest = Recipe.OnTest.SaveColorOfDye,
+		inputs
+		{
+			item 1 [Base.Wig_MaleHairMulletTINT;Base.Wig_MaleHairBuffontTINT;Base.Wig_MaleHairFabianBraidedTINT;Base.Wig_MaleHairFabianCurlyTINT;Base.Wig_MaleHairMessyCurlyTINT;Base.Wig_MaleHairMulletCurlyTINT;Base.Wig_MaleHairShortHatCurlyTINT;Base.Wig_MaleHairBaldspotTINT;Base.Wig_MaleHairCrewCutTINT;Base.Wig_MaleHairDonnyTINT;Base.Wig_MaleHairFabianTINT;Base.Wig_MaleHairMessyTINT;Base.Wig_MaleHairMetalTINT;Base.Wig_MaleHairPicardTINT;Base.Wig_MaleHairRecedeTINT;Base.Wig_MaleHairShortTINT;Base.Wig_MaleHairShortHatTINT;Base.Wig_FemaleHairBackTINT;Base.Wig_FemaleHairBobTINT;Base.Wig_FemaleHairBunTINT;Base.Wig_FemaleHairDemiTINT;Base.Wig_FemaleHairHatTINT;Base.Wig_FemaleHairKateTINT;Base.Wig_FemaleHairLongTINT;Base.Wig_FemaleHairLong2TINT;Base.Wig_FemaleHairOverEyeTINT;Base.Wig_FemaleHairPonyTailTINT;Base.Wig_FemaleHairSpikeTINT;Base.Wig_FemaleHairBobCurlyTINT;Base.Wig_FemaleHairBraided01TINT;Base.Wig_FemaleHairBunCurlyTINT;Base.Wig_FemaleHairCornrowsTINT;Base.Wig_FemaleHairFlatTopTINT;Base.Wig_FemaleHairFreshTINT;Base.Wig_FemaleHairGreasedBackTINT;Base.Wig_FemaleHairGrungeyTINT;Base.Wig_FemaleHairGrungey02TINT;Base.Wig_FemaleHairGrungeyBehindEarTINT;Base.Wig_FemaleHairGrungeyPartingTINT;Base.Wig_FemaleHairHatCurlyTINT;Base.Wig_FemaleHairHatLongTINT;Base.Wig_FemaleHairHatLongBraidedTINT;Base.Wig_FemaleHairHatLongCurlyTINT;Base.Wig_FemaleHairKateCurlyTINT;Base.Wig_FemaleHairLibertySpikesTINT;Base.Wig_FemaleHairLong2CurlyTINT;Base.Wig_FemaleHairLongBraidTINT;Base.Wig_FemaleHairLongBraid02TINT;Base.Wig_FemaleHairLongCurlyTINT;Base.Wig_FemaleHairMohawkFanTINT;Base.Wig_FemaleHairMohawkFlatTINT;Base.Wig_FemaleHairMohawkShortTINT;Base.Wig_FemaleHairMohawkSpikeTINT;Base.Wig_FemaleHairOverEyeCurlyTINT;Base.Wig_FemaleHairOverEyeLeftTINT;Base.Wig_FemaleHairPartingCentreTINT;Base.Wig_FemaleHairPartingCentreLongTINT;Base.Wig_FemaleHairPartingLeftTINT;Base.Wig_FemaleHairPartingRightTINT;Base.Wig_FemaleHairPonyTailBraidedTINT;Base.Wig_FemaleHairRachelTINT;Base.Wig_FemaleHairRachelCurlyTINT;Base.Wig_FemaleHairShortCurlyTINT;Base.Wig_FemaleHairTopMopTINT;Base.FakeBeard_BeardOnlyTINT;Base.FakeBeard_ChinTINT;Base.FakeBeard_ChopsTINT;Base.FakeBeard_FullTINT;Base.FakeBeard_GoateeTINT;Base.FakeBeard_LongTINT;Base.FakeBeard_LongScruffyTINT;Base.FakeBeard_MoustacheTINT;Base.FakeBeard_PointyChinTINT] mappers[wigType],
+			item 1 [*],
+			-fluid 0.25 [HairDye],
+		}
+		outputs
+		{
+			item 1 mapper:wigType,
+		}
+		itemMapper wigType
+		{
+			Base.Wig_MaleHairMulletTINT = Base.Wig_MaleHairMulletTINT,
+			Base.Wig_MaleHairBuffontTINT = Base.Wig_MaleHairBuffontTINT,
+			Base.Wig_MaleHairFabianBraidedTINT = Base.Wig_MaleHairFabianBraidedTINT,
+			Base.Wig_MaleHairFabianCurlyTINT = Base.Wig_MaleHairFabianCurlyTINT,
+			Base.Wig_MaleHairMessyCurlyTINT = Base.Wig_MaleHairMessyCurlyTINT,
+			Base.Wig_MaleHairMulletCurlyTINT = Base.Wig_MaleHairMulletCurlyTINT,
+			Base.Wig_MaleHairShortHatCurlyTINT = Base.Wig_MaleHairShortHatCurlyTINT,
+			Base.Wig_MaleHairBaldspotTINT = Base.Wig_MaleHairBaldspotTINT,
+			Base.Wig_MaleHairCrewCutTINT = Base.Wig_MaleHairCrewCutTINT,
+			Base.Wig_MaleHairDonnyTINT = Base.Wig_MaleHairDonnyTINT,
+			Base.Wig_MaleHairFabianTINT = Base.Wig_MaleHairFabianTINT,
+			Base.Wig_MaleHairMessyTINT = Base.Wig_MaleHairMessyTINT,
+			Base.Wig_MaleHairMetalTINT = Base.Wig_MaleHairMetalTINT,
+			Base.Wig_MaleHairPicardTINT = Base.Wig_MaleHairPicardTINT,
+			Base.Wig_MaleHairRecedeTINT = Base.Wig_MaleHairRecedeTINT,
+			Base.Wig_MaleHairShortTINT = Base.Wig_MaleHairShortTINT,
+			Base.Wig_MaleHairShortHatTINT = Base.Wig_MaleHairShortHatTINT,
+			Base.Wig_FemaleHairBackTINT = Base.Wig_FemaleHairBackTINT,
+			Base.Wig_FemaleHairBobTINT = Base.Wig_FemaleHairBobTINT,
+			Base.Wig_FemaleHairBunTINT = Base.Wig_FemaleHairBunTINT,
+			Base.Wig_FemaleHairDemiTINT = Base.Wig_FemaleHairDemiTINT,
+			Base.Wig_FemaleHairHatTINT = Base.Wig_FemaleHairHatTINT,
+			Base.Wig_FemaleHairKateTINT = Base.Wig_FemaleHairKateTINT,
+			Base.Wig_FemaleHairLongTINT = Base.Wig_FemaleHairLongTINT,
+			Base.Wig_FemaleHairLong2TINT = Base.Wig_FemaleHairLong2TINT,
+			Base.Wig_FemaleHairOverEyeTINT = Base.Wig_FemaleHairOverEyeTINT,
+			Base.Wig_FemaleHairPonyTailTINT = Base.Wig_FemaleHairPonyTailTINT,
+			Base.Wig_FemaleHairSpikeTINT = Base.Wig_FemaleHairSpikeTINT,
+			Base.Wig_FemaleHairBobCurlyTINT = Base.Wig_FemaleHairBobCurlyTINT,
+			Base.Wig_FemaleHairBraided01TINT = Base.Wig_FemaleHairBraided01TINT,
+			Base.Wig_FemaleHairBunCurlyTINT = Base.Wig_FemaleHairBunCurlyTINT,
+			Base.Wig_FemaleHairCornrowsTINT = Base.Wig_FemaleHairCornrowsTINT,
+			Base.Wig_FemaleHairFlatTopTINT = Base.Wig_FemaleHairFlatTopTINT,
+			Base.Wig_FemaleHairFreshTINT = Base.Wig_FemaleHairFreshTINT,
+			Base.Wig_FemaleHairGreasedBackTINT = Base.Wig_FemaleHairGreasedBackTINT,
+			Base.Wig_FemaleHairGrungeyTINT = Base.Wig_FemaleHairGrungeyTINT,
+			Base.Wig_FemaleHairGrungey02TINT = Base.Wig_FemaleHairGrungey02TINT,
+			Base.Wig_FemaleHairGrungeyBehindEarTINT = Base.Wig_FemaleHairGrungeyBehindEarTINT,
+			Base.Wig_FemaleHairGrungeyPartingTINT = Base.Wig_FemaleHairGrungeyPartingTINT,
+			Base.Wig_FemaleHairHatCurlyTINT = Base.Wig_FemaleHairHatCurlyTINT,
+			Base.Wig_FemaleHairHatLongTINT = Base.Wig_FemaleHairHatLongTINT,
+			Base.Wig_FemaleHairHatLongBraidedTINT = Base.Wig_FemaleHairHatLongBraidedTINT,
+			Base.Wig_FemaleHairHatLongCurlyTINT = Base.Wig_FemaleHairHatLongCurlyTINT,
+			Base.Wig_FemaleHairKateCurlyTINT = Base.Wig_FemaleHairKateCurlyTINT,
+			Base.Wig_FemaleHairLibertySpikesTINT = Base.Wig_FemaleHairLibertySpikesTINT,
+			Base.Wig_FemaleHairLong2CurlyTINT = Base.Wig_FemaleHairLong2CurlyTINT,
+			Base.Wig_FemaleHairLongBraidTINT = Base.Wig_FemaleHairLongBraidTINT,
+			Base.Wig_FemaleHairLongBraid02TINT = Base.Wig_FemaleHairLongBraid02TINT,
+			Base.Wig_FemaleHairLongCurlyTINT = Base.Wig_FemaleHairLongCurlyTINT,
+			Base.Wig_FemaleHairMohawkFanTINT = Base.Wig_FemaleHairMohawkFanTINT,
+			Base.Wig_FemaleHairMohawkFlatTINT = Base.Wig_FemaleHairMohawkFlatTINT,
+			Base.Wig_FemaleHairMohawkShortTINT = Base.Wig_FemaleHairMohawkShortTINT,
+			Base.Wig_FemaleHairMohawkSpikeTINT = Base.Wig_FemaleHairMohawkSpikeTINT,
+			Base.Wig_FemaleHairOverEyeCurlyTINT = Base.Wig_FemaleHairOverEyeCurlyTINT,
+			Base.Wig_FemaleHairOverEyeLeftTINT = Base.Wig_FemaleHairOverEyeLeftTINT,
+			Base.Wig_FemaleHairPartingCentreTINT = Base.Wig_FemaleHairPartingCentreTINT,
+			Base.Wig_FemaleHairPartingCentreLongTINT = Base.Wig_FemaleHairPartingCentreLongTINT,
+			Base.Wig_FemaleHairPartingLeftTINT = Base.Wig_FemaleHairPartingLeftTINT,
+			Base.Wig_FemaleHairPartingRightTINT = Base.Wig_FemaleHairPartingRightTINT,
+			Base.Wig_FemaleHairPonyTailBraidedTINT = Base.Wig_FemaleHairPonyTailBraidedTINT,
+			Base.Wig_FemaleHairRachelTINT = Base.Wig_FemaleHairRachelTINT,
+			Base.Wig_FemaleHairRachelCurlyTINT = Base.Wig_FemaleHairRachelCurlyTINT,
+			Base.Wig_FemaleHairShortCurlyTINT = Base.Wig_FemaleHairShortCurlyTINT,
+			Base.Wig_FemaleHairTopMopTINT = Base.Wig_FemaleHairTopMopTINT,
+			Base.FakeBeard_BeardOnlyTINT = Base.FakeBeard_BeardOnlyTINT,
+			Base.FakeBeard_ChinTINT = Base.FakeBeard_ChinTINT,
+			Base.FakeBeard_ChopsTINT = Base.FakeBeard_ChopsTINT,
+			Base.FakeBeard_FullTINT = Base.FakeBeard_FullTINT,
+			Base.FakeBeard_GoateeTINT = Base.FakeBeard_GoateeTINT,
+			Base.FakeBeard_LongTINT = Base.FakeBeard_LongTINT,
+			Base.FakeBeard_LongScruffyTINT = Base.FakeBeard_LongScruffyTINT,
+			Base.FakeBeard_MoustacheTINT = Base.FakeBeard_MoustacheTINT,
+			Base.FakeBeard_PointyChinTINT = Base.FakeBeard_PointyChinTINT,
+
+		}
+
+	}
+	craftRecipe UndyeWig
+	{
+		timedAction = SewingCloth,
+		Time = 45,
+		Tags = InHandCraft,
+		category = Wigs,
+		OnCreate = Recipe.OnCreate.Undye,
+		inputs
+		{
+			item 1 [Base.Wig_MaleHairMulletTINT;Base.Wig_MaleHairBuffontTINT;Base.Wig_MaleHairFabianBraidedTINT;Base.Wig_MaleHairFabianCurlyTINT;Base.Wig_MaleHairMessyCurlyTINT;Base.Wig_MaleHairMulletCurlyTINT;Base.Wig_MaleHairShortHatCurlyTINT;Base.Wig_MaleHairBaldspotTINT;Base.Wig_MaleHairCrewCutTINT;Base.Wig_MaleHairDonnyTINT;Base.Wig_MaleHairFabianTINT;Base.Wig_MaleHairMessyTINT;Base.Wig_MaleHairMetalTINT;Base.Wig_MaleHairPicardTINT;Base.Wig_MaleHairRecedeTINT;Base.Wig_MaleHairShortTINT;Base.Wig_MaleHairShortHatTINT;Base.Wig_FemaleHairBackTINT;Base.Wig_FemaleHairBobTINT;Base.Wig_FemaleHairBunTINT;Base.Wig_FemaleHairDemiTINT;Base.Wig_FemaleHairHatTINT;Base.Wig_FemaleHairKateTINT;Base.Wig_FemaleHairLongTINT;Base.Wig_FemaleHairLong2TINT;Base.Wig_FemaleHairOverEyeTINT;Base.Wig_FemaleHairPonyTailTINT;Base.Wig_FemaleHairSpikeTINT;Base.Wig_FemaleHairBobCurlyTINT;Base.Wig_FemaleHairBraided01TINT;Base.Wig_FemaleHairBunCurlyTINT;Base.Wig_FemaleHairCornrowsTINT;Base.Wig_FemaleHairFlatTopTINT;Base.Wig_FemaleHairFreshTINT;Base.Wig_FemaleHairGreasedBackTINT;Base.Wig_FemaleHairGrungeyTINT;Base.Wig_FemaleHairGrungey02TINT;Base.Wig_FemaleHairGrungeyBehindEarTINT;Base.Wig_FemaleHairGrungeyPartingTINT;Base.Wig_FemaleHairHatCurlyTINT;Base.Wig_FemaleHairHatLongTINT;Base.Wig_FemaleHairHatLongBraidedTINT;Base.Wig_FemaleHairHatLongCurlyTINT;Base.Wig_FemaleHairKateCurlyTINT;Base.Wig_FemaleHairLibertySpikesTINT;Base.Wig_FemaleHairLong2CurlyTINT;Base.Wig_FemaleHairLongBraidTINT;Base.Wig_FemaleHairLongBraid02TINT;Base.Wig_FemaleHairLongCurlyTINT;Base.Wig_FemaleHairMohawkFanTINT;Base.Wig_FemaleHairMohawkFlatTINT;Base.Wig_FemaleHairMohawkShortTINT;Base.Wig_FemaleHairMohawkSpikeTINT;Base.Wig_FemaleHairOverEyeCurlyTINT;Base.Wig_FemaleHairOverEyeLeftTINT;Base.Wig_FemaleHairPartingCentreTINT;Base.Wig_FemaleHairPartingCentreLongTINT;Base.Wig_FemaleHairPartingLeftTINT;Base.Wig_FemaleHairPartingRightTINT;Base.Wig_FemaleHairPonyTailBraidedTINT;Base.Wig_FemaleHairRachelTINT;Base.Wig_FemaleHairRachelCurlyTINT;Base.Wig_FemaleHairShortCurlyTINT;Base.Wig_FemaleHairTopMopTINT;Base.FakeBeard_BeardOnlyTINT;Base.FakeBeard_ChinTINT;Base.FakeBeard_ChopsTINT;Base.FakeBeard_FullTINT;Base.FakeBeard_GoateeTINT;Base.FakeBeard_LongTINT;Base.FakeBeard_LongScruffyTINT;Base.FakeBeard_MoustacheTINT;Base.FakeBeard_PointyChinTINT] mappers[wigType],
+			item 1 [*],
+			-fluid 0.25 [Bleach],
+		}
+		outputs
+		{
+			item 1 mapper:wigType,
+		}
+		itemMapper wigType
+		{
+			Base.Wig_MaleHairMulletTINT = Base.Wig_MaleHairMulletTINT,
+			Base.Wig_MaleHairBuffontTINT = Base.Wig_MaleHairBuffontTINT,
+			Base.Wig_MaleHairFabianBraidedTINT = Base.Wig_MaleHairFabianBraidedTINT,
+			Base.Wig_MaleHairFabianCurlyTINT = Base.Wig_MaleHairFabianCurlyTINT,
+			Base.Wig_MaleHairMessyCurlyTINT = Base.Wig_MaleHairMessyCurlyTINT,
+			Base.Wig_MaleHairMulletCurlyTINT = Base.Wig_MaleHairMulletCurlyTINT,
+			Base.Wig_MaleHairShortHatCurlyTINT = Base.Wig_MaleHairShortHatCurlyTINT,
+			Base.Wig_MaleHairBaldspotTINT = Base.Wig_MaleHairBaldspotTINT,
+			Base.Wig_MaleHairCrewCutTINT = Base.Wig_MaleHairCrewCutTINT,
+			Base.Wig_MaleHairDonnyTINT = Base.Wig_MaleHairDonnyTINT,
+			Base.Wig_MaleHairFabianTINT = Base.Wig_MaleHairFabianTINT,
+			Base.Wig_MaleHairMessyTINT = Base.Wig_MaleHairMessyTINT,
+			Base.Wig_MaleHairMetalTINT = Base.Wig_MaleHairMetalTINT,
+			Base.Wig_MaleHairPicardTINT = Base.Wig_MaleHairPicardTINT,
+			Base.Wig_MaleHairRecedeTINT = Base.Wig_MaleHairRecedeTINT,
+			Base.Wig_MaleHairShortTINT = Base.Wig_MaleHairShortTINT,
+			Base.Wig_MaleHairShortHatTINT = Base.Wig_MaleHairShortHatTINT,
+			Base.Wig_FemaleHairBackTINT = Base.Wig_FemaleHairBackTINT,
+			Base.Wig_FemaleHairBobTINT = Base.Wig_FemaleHairBobTINT,
+			Base.Wig_FemaleHairBunTINT = Base.Wig_FemaleHairBunTINT,
+			Base.Wig_FemaleHairDemiTINT = Base.Wig_FemaleHairDemiTINT,
+			Base.Wig_FemaleHairHatTINT = Base.Wig_FemaleHairHatTINT,
+			Base.Wig_FemaleHairKateTINT = Base.Wig_FemaleHairKateTINT,
+			Base.Wig_FemaleHairLongTINT = Base.Wig_FemaleHairLongTINT,
+			Base.Wig_FemaleHairLong2TINT = Base.Wig_FemaleHairLong2TINT,
+			Base.Wig_FemaleHairOverEyeTINT = Base.Wig_FemaleHairOverEyeTINT,
+			Base.Wig_FemaleHairPonyTailTINT = Base.Wig_FemaleHairPonyTailTINT,
+			Base.Wig_FemaleHairSpikeTINT = Base.Wig_FemaleHairSpikeTINT,
+			Base.Wig_FemaleHairBobCurlyTINT = Base.Wig_FemaleHairBobCurlyTINT,
+			Base.Wig_FemaleHairBraided01TINT = Base.Wig_FemaleHairBraided01TINT,
+			Base.Wig_FemaleHairBunCurlyTINT = Base.Wig_FemaleHairBunCurlyTINT,
+			Base.Wig_FemaleHairCornrowsTINT = Base.Wig_FemaleHairCornrowsTINT,
+			Base.Wig_FemaleHairFlatTopTINT = Base.Wig_FemaleHairFlatTopTINT,
+			Base.Wig_FemaleHairFreshTINT = Base.Wig_FemaleHairFreshTINT,
+			Base.Wig_FemaleHairGreasedBackTINT = Base.Wig_FemaleHairGreasedBackTINT,
+			Base.Wig_FemaleHairGrungeyTINT = Base.Wig_FemaleHairGrungeyTINT,
+			Base.Wig_FemaleHairGrungey02TINT = Base.Wig_FemaleHairGrungey02TINT,
+			Base.Wig_FemaleHairGrungeyBehindEarTINT = Base.Wig_FemaleHairGrungeyBehindEarTINT,
+			Base.Wig_FemaleHairGrungeyPartingTINT = Base.Wig_FemaleHairGrungeyPartingTINT,
+			Base.Wig_FemaleHairHatCurlyTINT = Base.Wig_FemaleHairHatCurlyTINT,
+			Base.Wig_FemaleHairHatLongTINT = Base.Wig_FemaleHairHatLongTINT,
+			Base.Wig_FemaleHairHatLongBraidedTINT = Base.Wig_FemaleHairHatLongBraidedTINT,
+			Base.Wig_FemaleHairHatLongCurlyTINT = Base.Wig_FemaleHairHatLongCurlyTINT,
+			Base.Wig_FemaleHairKateCurlyTINT = Base.Wig_FemaleHairKateCurlyTINT,
+			Base.Wig_FemaleHairLibertySpikesTINT = Base.Wig_FemaleHairLibertySpikesTINT,
+			Base.Wig_FemaleHairLong2CurlyTINT = Base.Wig_FemaleHairLong2CurlyTINT,
+			Base.Wig_FemaleHairLongBraidTINT = Base.Wig_FemaleHairLongBraidTINT,
+			Base.Wig_FemaleHairLongBraid02TINT = Base.Wig_FemaleHairLongBraid02TINT,
+			Base.Wig_FemaleHairLongCurlyTINT = Base.Wig_FemaleHairLongCurlyTINT,
+			Base.Wig_FemaleHairMohawkFanTINT = Base.Wig_FemaleHairMohawkFanTINT,
+			Base.Wig_FemaleHairMohawkFlatTINT = Base.Wig_FemaleHairMohawkFlatTINT,
+			Base.Wig_FemaleHairMohawkShortTINT = Base.Wig_FemaleHairMohawkShortTINT,
+			Base.Wig_FemaleHairMohawkSpikeTINT = Base.Wig_FemaleHairMohawkSpikeTINT,
+			Base.Wig_FemaleHairOverEyeCurlyTINT = Base.Wig_FemaleHairOverEyeCurlyTINT,
+			Base.Wig_FemaleHairOverEyeLeftTINT = Base.Wig_FemaleHairOverEyeLeftTINT,
+			Base.Wig_FemaleHairPartingCentreTINT = Base.Wig_FemaleHairPartingCentreTINT,
+			Base.Wig_FemaleHairPartingCentreLongTINT = Base.Wig_FemaleHairPartingCentreLongTINT,
+			Base.Wig_FemaleHairPartingLeftTINT = Base.Wig_FemaleHairPartingLeftTINT,
+			Base.Wig_FemaleHairPartingRightTINT = Base.Wig_FemaleHairPartingRightTINT,
+			Base.Wig_FemaleHairPonyTailBraidedTINT = Base.Wig_FemaleHairPonyTailBraidedTINT,
+			Base.Wig_FemaleHairRachelTINT = Base.Wig_FemaleHairRachelTINT,
+			Base.Wig_FemaleHairRachelCurlyTINT = Base.Wig_FemaleHairRachelCurlyTINT,
+			Base.Wig_FemaleHairShortCurlyTINT = Base.Wig_FemaleHairShortCurlyTINT,
+			Base.Wig_FemaleHairTopMopTINT = Base.Wig_FemaleHairTopMopTINT,
+			Base.FakeBeard_BeardOnlyTINT = Base.FakeBeard_BeardOnlyTINT,
+			Base.FakeBeard_ChinTINT = Base.FakeBeard_ChinTINT,
+			Base.FakeBeard_ChopsTINT = Base.FakeBeard_ChopsTINT,
+			Base.FakeBeard_FullTINT = Base.FakeBeard_FullTINT,
+			Base.FakeBeard_GoateeTINT = Base.FakeBeard_GoateeTINT,
+			Base.FakeBeard_LongTINT = Base.FakeBeard_LongTINT,
+			Base.FakeBeard_LongScruffyTINT = Base.FakeBeard_LongScruffyTINT,
+			Base.FakeBeard_MoustacheTINT = Base.FakeBeard_MoustacheTINT,
+			Base.FakeBeard_PointyChinTINT = Base.FakeBeard_PointyChinTINT,
+		}
+	}
+
+}

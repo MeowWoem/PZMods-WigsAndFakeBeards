@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+    <m_MaleModel>skinned\hair\Bob_Hair_MessyCurly</m_MaleModel>
+    <m_FemaleModel>skinned\hair\Bob_Hair_MessyCurly</m_FemaleModel>
+    <m_GUID>6gn0o3p4-fa12-0901-5c34-f017i8j9k012</m_GUID>
+    <m_Static>false</m_Static>
+	<m_AllowRandomTint>true</m_AllowRandomTint>
+    <m_AttachBone></m_AttachBone>
+    <m_HatCategory>nohair</m_HatCategory>
+    <m_MasksFolder>media/textures/Clothes/Hat/Masks</m_MasksFolder>
+	<textureChoices>clothes/wigs/F_HairCurly_Short</textureChoices>
+</clothingItem>

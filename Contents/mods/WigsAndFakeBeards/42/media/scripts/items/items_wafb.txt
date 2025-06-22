@@ -1,0 +1,34 @@
+module Base
+{
+	item HairTuft
+    {
+        DisplayCategory = Material,
+        Type = Normal,
+        DisplayName = Hair Tuft,
+        WorldStaticModel = HairTuftTINT,
+        Icon = HairTuft,
+        Weight = 0.01,
+		OnCreate = SpecialLootSpawns.OnCreateRandomColor,
+    }
+    item HairTuftDirty
+    {
+        DisplayCategory = Material,
+        Type = Normal,
+        DisplayName = Hair Tuft (Dirty),
+        WorldStaticModel = HairTuftTINT,
+        Icon = HairTuft,
+        Weight = 0.01,
+		OnCreate = SpecialLootSpawns.OnCreateRandomColor,
+		ItemAfterCleaning = Base.HairTuft,
+		Tags = CanBeWashed,
+    }
+	item DummyWig
+	{
+		DisplayCategory = Material,
+		Type = Normal,
+		DisplayName = Dummy Wig,
+        WorldStaticModel = HairTuftTINT,
+		Weight = 0.01,
+		Icon = Wig
+	}
+}
