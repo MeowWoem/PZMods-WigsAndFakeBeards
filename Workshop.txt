@@ -39,6 +39,6 @@ description=I don't plan on porting this mod to B41. No need to ask.
 description=
 description=[hr][/hr]
 description=[h2]Checkout my other mods[/h2]
-description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3475536311][img]https://images.steamusercontent.com/ugc/17439856059751794573/E01F4B22E4F05908B9DC75C36108F53DAFF0E785/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true[/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3488657694][img]https://images.steamusercontent.com/ugc/13032022419733971339/0C8B85615B0BB5E687E5A4EE73993E9464D5B4D6/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true[/img][/url]
+description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3497998571][img]https://images.steamusercontent.com/ugc/15989497037735376918/EAF69C112E809667FBC8F415199C787084460444/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true[/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3475536311][img]https://images.steamusercontent.com/ugc/17439856059751794573/E01F4B22E4F05908B9DC75C36108F53DAFF0E785/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true[/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3488657694][img]https://images.steamusercontent.com/ugc/13032022419733971339/0C8B85615B0BB5E687E5A4EE73993E9464D5B4D6/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true[/img][/url]
 tags=Build 42;Clothing/Armor;Silly/Fun
 visibility=public
