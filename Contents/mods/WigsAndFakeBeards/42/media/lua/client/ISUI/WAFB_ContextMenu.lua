@@ -188,7 +188,10 @@ function ContextMenu.addOnCutHairCorpseOption(player, context, worldObjects, tes
 		if square2 then
 			local corpses2 = square2:getStaticMovingObjects()
 			for i=1,corpses2:size() do
-				table.insert(corpses, corpses2:get(i-1))
+				local v = corpses2:get(i-1)
+				if not v:isAnimal() then
+					table.insert(corpses, v)
+				end
 			end
 		end
 	end
