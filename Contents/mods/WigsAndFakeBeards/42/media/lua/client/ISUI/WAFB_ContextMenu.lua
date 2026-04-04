@@ -5,15 +5,18 @@
 local ContextMenu = {}
 
 local function predicateShear(item)
-    return not item:isBroken() and item:hasTag("Shear")
+	if not item then return false end
+    return not item:isBroken() and item:hasTag(ItemTag.SHEAR)
 end
 
 local function predicateScissors(item)
-    return not item:isBroken() and item:hasTag("Scissors")
+	if not item then return false end
+    return not item:isBroken() and item:hasTag(ItemTag.SCISSORS)
 end
 
 local function predicateRazor(item)
-    return not item:isBroken() and item:hasTag("Razor")
+	if not item then return false end
+    return not item:isBroken() and item:hasTag(ItemTag.RAZOR)
 end
 
 function ContextMenu.onCutHair(playerObj, context, corpse, item)

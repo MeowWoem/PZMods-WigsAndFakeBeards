@@ -215,9 +215,9 @@ function ISCorpseHairCutting:new (character, corpse, item)
     o.item = item
     
     o.corpse = corpse
-    o.isShear = item:hasTag("Shear")
-    o.isRazor = item:hasTag("Razor")
-    o.isScissors = item:hasTag("Scissors")
+    o.isShear = item:hasTag(ItemTag.SHEAR)
+    o.isRazor = item:hasTag(ItemTag.RAZOR)
+    o.isScissors = item:hasTag(ItemTag.SCISSORS)
 	o.maxTime = o:getDuration()
     return o
 end
