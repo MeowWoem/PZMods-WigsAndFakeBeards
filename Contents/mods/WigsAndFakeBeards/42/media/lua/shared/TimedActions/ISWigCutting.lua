@@ -65,7 +65,8 @@ function ISWigCutting:complete()
 	
 	newItem:setColor(color)
 	newItem:setCustomColor(true);
-	playerInv:AddItem(newItem)
+	playerInv:AddItem(newItem);
+	sendAddItemsToContainer(playerInv, newItem);
 	
 	for i = 1, self.hairTuftQty do
 		local tuft = instanceItem("Base.HairTuft")
@@ -85,6 +86,7 @@ function ISWigCutting:complete()
 		tuft:setCustomColor(true);
 		
 		playerInv:AddItem(tuft)
+		sendAddItemsToContainer(playerInv, tuft);
 		
 		i = i + 1
 	end

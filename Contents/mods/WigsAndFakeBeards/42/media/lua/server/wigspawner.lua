@@ -53,7 +53,9 @@ local function OnFillContainer(roomType, containerType, container)
 		local choice = ZombRand(#CorpseHairCuttingUtils.wigStyleIndexed) + 1
 		local result = createItemWithRandomHairColor(CorpseHairCuttingUtils.wigStyleIndexed[choice].itemType, true)
 		container:AddItem(result)
+		sendAddItemsToContainer(container, result);
 		container:Remove(item)
+		sendRemoveItemFromContainer(container, item);
 	end
 	
 	items = container:FindAll("Base.HairTuft")
