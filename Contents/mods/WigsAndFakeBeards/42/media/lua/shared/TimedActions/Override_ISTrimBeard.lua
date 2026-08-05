@@ -5,7 +5,7 @@ function ISTrimBeard:complete()
 	local currentBeardStyleData = CorpseHairCuttingUtils.getBeardStyle(self.character:getHumanVisual():getBeardModel())
 	local newBeardStyleData = CorpseHairCuttingUtils.getBeardStyle(self.beardStyle)
 	
-	local immuColor = self.character:getHumanVisual():getHairColor()
+	local immuColor = self.character:getHumanVisual():getBeardColor()
 	local color = Color.new(immuColor:getRedFloat(), immuColor:getGreenFloat(), immuColor:getBlueFloat(), 1)
 
 	local qty = currentBeardStyleData.qtyMax - newBeardStyleData.qtyMax
@@ -30,7 +30,6 @@ function ISTrimBeard:complete()
 		
 		self.character:getInventory():AddItem(item)
 		
-		i = i + 1
 	end
 
 	self.character:getHumanVisual():setBeardModel(self.beardStyle);

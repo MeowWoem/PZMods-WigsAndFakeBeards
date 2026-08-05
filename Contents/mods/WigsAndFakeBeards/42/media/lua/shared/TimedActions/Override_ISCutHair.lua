@@ -47,7 +47,6 @@ function ISCutHair:complete()
 		
 		self.character:getInventory():AddItem(item)
 		
-		i = i + 1
 	end
 	
 	self.character:getHumanVisual():setHairModel(self.hairStyle);
@@ -56,7 +55,7 @@ function ISCutHair:complete()
 
 	-- reduce hairgel for mohawk
 	if (newHairStyle:getName():contains("Mohawk") or newHairStyle:getName():contains("Spike") or newHairStyle:getName():contains("GreasedBack")) and newHairStyle:getName() ~= "MohawkFlat" then
-		local hairgel = self.character:getInventory():getItemFromType("Hairgel", true, true) or self.character:getInventory():getItemFromType("Hairspray2", true, true) or self.character:getInventory():getFirstTagRecurse("DoHairdo");
+		local hairgel = self.character:getInventory():getItemFromType("Hairgel", true, true) or self.character:getInventory():getItemFromType("Hairspray2", true, true) or self.character:getInventory():getFirstTagRecurse(ItemTag.DO_HAIRDO);
 		if hairgel then
 			hairgel:UseAndSync();
 		end
@@ -70,7 +69,7 @@ function ISCutHair:complete()
 	end
 	-- reduce hairgel for greased
 	if newHairStyle:getName():contains("Greased") then
-		local hairgel = self.character:getInventory():getItemFromType("Hairgel", true, true) or self.character:getInventory():getFirstTagRecurse("SlickHair")
+		local hairgel = self.character:getInventory():getItemFromType("Hairgel", true, true)
 		if hairgel then
 			hairgel:UseAndSync();
 		end

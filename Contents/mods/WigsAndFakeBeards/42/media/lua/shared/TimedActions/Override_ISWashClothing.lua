@@ -3,8 +3,9 @@ require "TimedActions/ISWashClothing"
 function ISWashClothing:complete()
 	local item = self.item;
 	local water = ISWashClothing.GetRequiredWater(item)
+	local isRemoved = false;
 
-	if instanceof(item, "Clothing") then
+	if instanceof(item, "Clothing") or instanceof(item, "InventoryContainer") then
 		local coveredParts = BloodClothingType.getCoveredParts(item:getBloodClothingType())
 		if coveredParts then
 			for j=0,coveredParts:size()-1 do
@@ -15,15 +16,23 @@ function ISWashClothing:complete()
 				item:setDirt(coveredParts:get(j), 0);
 			end
 		end
-		item:setWetness(100);
-		item:setDirtyness(0);
+		if instanceof(item, "Clothing") then
+			item:setWetness(100);
+			item:setDirtiness(0);
+		end
 	elseif item:getItemAfterCleaning() then
+		isRemoved = true;
+		local newItemType = item:getItemAfterCleaning();
+		
 		local color = item:getColor()
 		local immuColor = ImmutableColor.new(color)
-		local newItem = instanceItem(item:getItemAfterCleaning());
-				
-		local visual = newItem:getVisual();
 		
+		self.character:getInventory():Remove(item);
+		sendRemoveItemFromContainer(self.character:getInventory(), item);
+		
+		local newItem = self.character:getInventory():AddItem(newItemType);
+		
+		local visual = newItem:getVisual();
 		if visual then
 			visual:setTint(immuColor);
 		end
@@ -31,21 +40,21 @@ function ISWashClothing:complete()
 		newItem:setColorRed(immuColor:getRedFloat());
 		newItem:setColorGreen(immuColor:getGreenFloat());
 		newItem:setColorBlue(immuColor:getBlueFloat());
-		
-		
-		newItem:setColor(color)
+		newItem:setColor(color);
 		newItem:setCustomColor(true);
 		
-		self.character:getInventory():Remove(item);
-		self.character:getInventory():AddItem(newItem);
+		newItem:setFavorite(item:isFavorite());
+		sendAddItemToContainer(self.character:getInventory(), newItem);
 	else
 		self:useSoap(item, nil);
 	end
 
 	item:setBloodLevel(0);
-
-	--sync Wetness, Dirtyness, BloodLevel
-	syncItemFields(self.character, item);
+	
+	if not isRemoved then
+		syncItemFields(self.character, item);
+	end
+	
 	syncVisuals(self.character);
 	self.character:updateHandEquips();
 
