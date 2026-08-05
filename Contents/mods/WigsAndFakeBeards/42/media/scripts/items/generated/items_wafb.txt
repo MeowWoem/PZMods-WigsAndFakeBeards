@@ -29,6 +29,6 @@ module Base
 		DisplayName = Dummy Wig,
         WorldStaticModel = HairTuftTINT,
 		Weight = 0.01,
-		Icon = Wig
+		Icon = Wig,
 	}
 }
