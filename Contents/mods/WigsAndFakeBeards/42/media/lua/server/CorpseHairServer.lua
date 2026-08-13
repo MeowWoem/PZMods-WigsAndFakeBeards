@@ -1,4 +1,5 @@
 local function onClientCommand(module, command, player, args)
+    
     if module == "CorpseHair" and command == "UpdateCorpseVisual" then
         local sq = getSquare(args.x, args.y, args.z);
         if sq then
@@ -18,9 +19,9 @@ local function onClientCommand(module, command, player, args)
                 end
             end
         end
-        -- Renvoyer l'instruction à l'ensemble des joueurs proches/sur le serveur
         sendServerCommand("CorpseHair", "SyncCorpseVisual", args);
     end
+
 end
 
 Events.OnClientCommand.Add(onClientCommand);
