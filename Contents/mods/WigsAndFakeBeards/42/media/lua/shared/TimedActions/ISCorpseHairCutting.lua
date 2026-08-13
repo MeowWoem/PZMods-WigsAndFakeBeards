@@ -25,7 +25,13 @@ function ISCorpseHairCutting:update()
 end
 
 function ISCorpseHairCutting:start()
-    self.item:setJobType(getText("ContextMenu_CutCorpseHair"));
+    if(self.isRazor) then
+        self.item:setJobType(getText("ContextMenu_ShaveRazorCorpseHair"));
+    elseif(self.isShear) then
+        self.item:setJobType(getText("ContextMenu_ShaveCorpseHair"));
+    else
+        self.item:setJobType(getText("ContextMenu_CutCorpseHair"));
+    end
     self.item:setJobDelta(0.0);
 
     if self.isShear then
