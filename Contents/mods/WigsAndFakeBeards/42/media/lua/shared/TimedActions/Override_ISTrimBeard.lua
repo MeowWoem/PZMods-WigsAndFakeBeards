@@ -1,49 +1,35 @@
-require "TimedActions/ISTrimBeard"
+require "TimedActions/ISTrimBeard";
+
+local old_ISTrimBeard_complete = ISTrimBeard.complete;
 
 function ISTrimBeard:complete()
+    local currentBeardStyleData = CorpseHairCuttingUtils.getBeardStyle(self.character:getHumanVisual():getBeardModel());
+    local newBeardStyleData = CorpseHairCuttingUtils.getBeardStyle(self.beardStyle);
 
-	local currentBeardStyleData = CorpseHairCuttingUtils.getBeardStyle(self.character:getHumanVisual():getBeardModel())
-	local newBeardStyleData = CorpseHairCuttingUtils.getBeardStyle(self.beardStyle)
-	
-	local immuColor = self.character:getHumanVisual():getBeardColor()
-	local color = Color.new(immuColor:getRedFloat(), immuColor:getGreenFloat(), immuColor:getBlueFloat(), 1)
+    local immuColor = self.character:getHumanVisual():getBeardColor();
+    local color = Color.new(immuColor:getRedFloat(), immuColor:getGreenFloat(), immuColor:getBlueFloat(), 1);
 
-	local qty = currentBeardStyleData.qtyMax - newBeardStyleData.qtyMax
-	
-	for i = 1, qty do
-	
-		local item = instanceItem("Base.HairTuft")
-		
-		local visual = item:getVisual();
-		
-		if visual then
-			visual:setTint(immuColor);
-		end
-		
-		item:setColorRed(immuColor:getRedFloat());
-		item:setColorGreen(immuColor:getGreenFloat());
-		item:setColorBlue(immuColor:getBlueFloat());
-		
-		
-		item:setColor(color)
-		item:setCustomColor(true);
-		
-		self.character:getInventory():AddItem(item)
-		
-	end
+    local qty = currentBeardStyleData.qtyMax - newBeardStyleData.qtyMax;
 
-	self.character:getHumanVisual():setBeardModel(self.beardStyle);
+    local result = old_ISTrimBeard_complete(self);
 
-	if self.beardStyle == "" then
-		self.character:getHumanVisual():setBeardColor(self.character:getHumanVisual():getNaturalBeardColor())
-	end
-	sendHumanVisual(self.character)
+    for i = 1, qty do
+        local item = instanceItem("Base.HairTuft");
 
-	if not isServer() then
-		self.character:resetModel();
-		self.character:resetBeardGrowingTime();
-		triggerEvent("OnClothingUpdated", self.character)
-	end
+        local visual = item:getVisual();
+        if visual then
+            visual:setTint(immuColor);
+        end
 
-	return true
+        item:setColorRed(immuColor:getRedFloat());
+        item:setColorGreen(immuColor:getGreenFloat());
+        item:setColorBlue(immuColor:getBlueFloat());
+        item:setColor(color);
+        item:setCustomColor(true);
+
+        self.character:getInventory():AddItem(item);
+        sendAddItemToContainer(self.character:getInventory(), item);
+    end
+
+    return result;
 end

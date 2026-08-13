@@ -1,71 +1,72 @@
-require "TimedActions/ISWashClothing"
+require "TimedActions/ISWashClothing";
+
+local old_ISWashClothing_complete = ISWashClothing.complete;
 
 function ISWashClothing:complete()
-	local item = self.item;
-	local water = ISWashClothing.GetRequiredWater(item)
-	local isRemoved = false;
+    local item = self.item;
+    local hasReplacement = item:getItemAfterCleaning() ~= nil;
+    local color, immuColor;
 
-	if instanceof(item, "Clothing") or instanceof(item, "InventoryContainer") then
-		local coveredParts = BloodClothingType.getCoveredParts(item:getBloodClothingType())
-		if coveredParts then
-			for j=0,coveredParts:size()-1 do
-				if self.noSoap == false then
-					self:useSoap(item, coveredParts:get(j));
-				end
-				item:setBlood(coveredParts:get(j), 0);
-				item:setDirt(coveredParts:get(j), 0);
-			end
+    if hasReplacement then
+        color = item:getColor();
+        immuColor = ImmutableColor.new(color);
+    end
+
+    local result = old_ISWashClothing_complete(self);
+
+    if hasReplacement then
+        local items = self.character:getInventory():getItems();
+        local newItem = items:get(items:size() - 1);
+
+        local visual = newItem:getVisual();
+        if visual then
+            visual:setTint(immuColor);
+        end
+
+        newItem:setColorRed(immuColor:getRedFloat());
+        newItem:setColorGreen(immuColor:getGreenFloat());
+        newItem:setColorBlue(immuColor:getBlueFloat());
+        newItem:setColor(color);
+        newItem:setCustomColor(true);
+
+		newItem:synchWithVisual();
+		if(isMultiplayer() and isServer()) then
+        	sendServerCommand("CorpseHair", "SyncHairTuftColor", {
+                r = immuColor:getRedFloat(),
+                g = immuColor:getGreenFloat(),
+                b = immuColor:getBlueFloat(),
+                index = items:size() - 1,
+                playerNum = self.character:getPlayerNum(),
+            });
 		end
-		if instanceof(item, "Clothing") then
-			item:setWetness(100);
-			item:setDirtiness(0);
-		end
-	elseif item:getItemAfterCleaning() then
-		isRemoved = true;
-		local newItemType = item:getItemAfterCleaning();
-		
-		local color = item:getColor()
-		local immuColor = ImmutableColor.new(color)
-		
-		self.character:getInventory():Remove(item);
-		sendRemoveItemFromContainer(self.character:getInventory(), item);
-		
-		local newItem = self.character:getInventory():AddItem(newItemType);
-		
-		local visual = newItem:getVisual();
-		if visual then
-			visual:setTint(immuColor);
-		end
-		
-		newItem:setColorRed(immuColor:getRedFloat());
-		newItem:setColorGreen(immuColor:getGreenFloat());
-		newItem:setColorBlue(immuColor:getBlueFloat());
-		newItem:setColor(color);
-		newItem:setCustomColor(true);
-		
-		newItem:setFavorite(item:isFavorite());
-		sendAddItemToContainer(self.character:getInventory(), newItem);
-	else
-		self:useSoap(item, nil);
-	end
+    end
 
-	item:setBloodLevel(0);
-	
-	if not isRemoved then
-		syncItemFields(self.character, item);
-	end
-	
-	syncVisuals(self.character);
-	self.character:updateHandEquips();
-
-	if self.character:isPrimaryHandItem(item) then
-		self.character:setPrimaryHandItem(item);
-	end
-	if self.character:isSecondaryHandItem(item) then
-		self.character:setSecondaryHandItem(item);
-	end
-
-	self.sink:useFluid(water);
-
-	return true;
+    return result;
 end
+
+local function onServerCommand(module, command, args)
+	
+    if module == "CorpseHair" and command == "SyncHairTuftColor" then
+		
+        local color = Color.new(args.r, args.g, args.b);
+        local immuColor = ImmutableColor.new(args.r, args.g, args.b);
+        local items = getSpecificPlayer(args.playerNum):getInventory():getItems();
+		local newItem = items:get(args.index);
+		if(not newItem) then return; end
+
+        local visual = newItem:getVisual();
+        if visual then
+            visual:setTint(immuColor);
+        end
+
+        newItem:setColorRed(immuColor:getRedFloat());
+        newItem:setColorGreen(immuColor:getGreenFloat());
+        newItem:setColorBlue(immuColor:getBlueFloat());
+        newItem:setColor(color);
+        newItem:setCustomColor(true);
+		newItem:synchWithVisual();
+		newItem:syncItemFields();
+    end
+end
+
+Events.OnServerCommand.Add(onServerCommand);
