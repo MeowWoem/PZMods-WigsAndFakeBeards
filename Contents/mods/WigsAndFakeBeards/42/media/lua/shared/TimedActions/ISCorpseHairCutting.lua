@@ -54,10 +54,69 @@ function ISCorpseHairCutting:perform()
     self:stopSound();
     self.item:setJobDelta(0.0);
 
-    self:completeAction();
+    if(isMultiplayer() and isClient()) then
+        self:updateCorpseVisual();
+    end
 
     ISBaseTimedAction.perform(self);
     return true;
+end
+
+function ISCorpseHairCutting:complete()
+    self:completeAction();
+    return true;
+end
+
+function ISCorpseHairCutting:updateCorpseVisual()
+    local visual = self.corpse:getHumanVisual();
+    if not visual then return; end
+    local hairModel = visual:getHairModel() or "";
+
+    local newHairModel = hairModel;
+    local newBeardModel = not self.corpse:isFemale() and (visual:getBeardModel() or "") or "";
+
+    local hairStyleData = CorpseHairCuttingUtils.getHairStyle(hairModel);
+    local beardStyleData = CorpseHairCuttingUtils.getBeardStyle("");
+
+    if not self.corpse:isFemale() then
+        beardStyleData = CorpseHairCuttingUtils.getBeardStyle(visual:getBeardModel() or "");
+    end
+
+    if self.isShear or self.isRazor then
+        newHairModel = "";
+        if not self.corpse:isFemale() then
+            newBeardModel = "";
+        end
+    else
+        if hairStyleData and hairStyleData.length > CorpseHairCuttingUtils.hairLengths.s then
+            newHairModel = "Short";
+        end
+        if not self.corpse:isFemale() and beardStyleData and beardStyleData.length > CorpseHairCuttingUtils.hairLengths.s then
+            newBeardModel = "Full";
+        end
+    end
+
+    local sq = self.corpse:getSquare();
+    if sq then
+        if isMultiplayer() and isClient() then
+            local args = {
+                x = sq:getX(),
+                y = sq:getY(),
+                z = sq:getZ(),
+                index = self.corpse:getStaticMovingObjectIndex(),
+                hairModel = newHairModel,
+                beardModel = newBeardModel
+            };
+            sendClientCommand("CorpseHair", "UpdateCorpseVisual", args);
+            self.corpse:transmitModData();
+        else
+            visual:setHairModel(newHairModel);
+            if not self.corpse:isFemale() then
+                visual:setBeardModel(newBeardModel);
+            end
+            self.corpse:invalidateCorpse();
+        end
+    end
 end
 
 function ISCorpseHairCutting:completeAction()
@@ -148,48 +207,11 @@ function ISCorpseHairCutting:completeAction()
         itemsToAdd:add(item);
     end
 
-    if isClient() and itemsToAdd:size() > 0 then
+    if itemsToAdd:size() > 0 then
         sendAddItemsToContainer(self.character:getInventory(), itemsToAdd);
     end
 
-    local newHairModel = hairModel;
-    local newBeardModel = not self.corpse:isFemale() and (visual:getBeardModel() or "") or "";
-
-    if self.isShear or self.isRazor then
-        newHairModel = "";
-        if not self.corpse:isFemale() then
-            newBeardModel = "";
-        end
-    else
-        if hairStyleData and hairStyleData.length > CorpseHairCuttingUtils.hairLengths.s then
-            newHairModel = "Short";
-        end
-        if not self.corpse:isFemale() and beardStyleData and beardStyleData.length > CorpseHairCuttingUtils.hairLengths.s then
-            newBeardModel = "Full";
-        end
-    end
-
-    local sq = self.corpse:getSquare();
-    if sq then
-        if isMultiplayer() and isClient() then
-            local args = {
-                x = sq:getX(),
-                y = sq:getY(),
-                z = sq:getZ(),
-                index = self.corpse:getStaticMovingObjectIndex(),
-                hairModel = newHairModel,
-                beardModel = newBeardModel
-            };
-            sendClientCommand("CorpseHair", "UpdateCorpseVisual", args);
-            self.corpse:transmitModData();
-        else
-            visual:setHairModel(newHairModel);
-            if not self.corpse:isFemale() then
-                visual:setBeardModel(newBeardModel);
-            end
-            self.corpse:invalidateCorpse();
-        end
-    end
+    self:updateCorpseVisual();
 end
 
 function ISCorpseHairCutting:getDuration()
