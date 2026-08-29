@@ -1,4 +1,4 @@
-CorpseHairCuttingUtils = {}
+CorpseHairCuttingUtils = {};
 
 CorpseHairCuttingUtils.hairLengths = {
 	bald = 0,
@@ -7,18 +7,18 @@ CorpseHairCuttingUtils.hairLengths = {
 	m = 3,
 	l = 4,
 	xl = 5,
-}
+};
 local hairLengths = CorpseHairCuttingUtils.hairLengths;
 
 local function HairStyle(canBeCollected, length, qtyMin, qtyMax)
-	qtyMin = qtyMin or 0
-	qtyMax = qtyMax or 0
+	qtyMin = qtyMin or 0;
+	qtyMax = qtyMax or 0;
 	return {
 		canBeCollected = canBeCollected,
 		qtyMin = qtyMin,
 		qtyMax = qtyMax,
 		length = length
-	}
+	};
 end
 
 CorpseHairCuttingUtils.hairStyles = {
@@ -92,10 +92,10 @@ CorpseHairCuttingUtils.hairStyles = {
 	KateCurly = HairStyle(true, hairLengths.xl, 4, 6),
 	Long2 = HairStyle(true, hairLengths.xl, 4, 6),
 	Long2curly = HairStyle(true, hairLengths.xl, 4, 6),
-}
+};
 
-CorpseHairCuttingUtils.hairStyles[""] = CorpseHairCuttingUtils.hairStyles.Bald
-CorpseHairCuttingUtils.hairStyles["default"] = CorpseHairCuttingUtils.hairStyles.Donny
+CorpseHairCuttingUtils.hairStyles[""] = CorpseHairCuttingUtils.hairStyles.Bald;
+CorpseHairCuttingUtils.hairStyles["default"] = CorpseHairCuttingUtils.hairStyles.Donny;
 
 
 CorpseHairCuttingUtils.beardStyles = {
@@ -111,10 +111,10 @@ CorpseHairCuttingUtils.beardStyles = {
 	
 	Long = HairStyle(true, hairLengths.m, 2, 3),
 	LongScruffy = HairStyle(true, hairLengths.m, 2, 3),
-}
+};
 
-CorpseHairCuttingUtils.beardStyles[""] = CorpseHairCuttingUtils.beardStyles.None
-CorpseHairCuttingUtils.beardStyles["default"] = CorpseHairCuttingUtils.beardStyles.Chops
+CorpseHairCuttingUtils.beardStyles[""] = CorpseHairCuttingUtils.beardStyles.None;
+CorpseHairCuttingUtils.beardStyles["default"] = CorpseHairCuttingUtils.beardStyles.Chops;
 
 
 
@@ -134,7 +134,6 @@ CorpseHairCuttingUtils.wigStyle = {
 	Wig_FemaleHairShortCurlyTINT = CorpseHairCuttingUtils.hairStyles.ShortCurly,
 	Wig_MaleHairShortHatTINT = CorpseHairCuttingUtils.hairStyles.ShortHat,
 	Wig_MaleHairShortHatCurlyTINT = CorpseHairCuttingUtils.hairStyles.ShortHatCurly,
-	Wig_FemaleHairShortCurlyTINT = CorpseHairCuttingUtils.hairStyles.ShortAfroCurly,
 	Wig_FemaleHairPartingCentreTINT = CorpseHairCuttingUtils.hairStyles.CentreParting,
 	Wig_FemaleHairPartingLeftTINT = CorpseHairCuttingUtils.hairStyles.LeftParting,
 	Wig_FemaleHairPartingRightTINT = CorpseHairCuttingUtils.hairStyles.RightParting,
@@ -195,9 +194,9 @@ CorpseHairCuttingUtils.wigStyle = {
 	FakeBeard_LongTINT = CorpseHairCuttingUtils.beardStyles.Long,
 	FakeBeard_LongScruffyTINT = CorpseHairCuttingUtils.beardStyles.LongScruffy,
 	
-}
+};
 
-CorpseHairCuttingUtils.wigStyleIndexed = {}
+CorpseHairCuttingUtils.wigStyleIndexed = {};
 
 
 CorpseHairCuttingUtils.commonHairColor = {
@@ -221,11 +220,11 @@ CorpseHairCuttingUtils.commonHairColor = {
     {0.651, 0.365, 0.247},
     {0.584, 0.251, 0.251},
     {0.525, 0.259, 0.188},
-}
+};
 
 for k, v in pairs(CorpseHairCuttingUtils.wigStyle) do
-	v.itemType = "Base." .. k
-	table.insert(CorpseHairCuttingUtils.wigStyleIndexed, v)
+	v.itemType = "Base." .. k;
+	table.insert(CorpseHairCuttingUtils.wigStyleIndexed, v);
 end
 
 CorpseHairCuttingUtils.getHairStyle = function(style)

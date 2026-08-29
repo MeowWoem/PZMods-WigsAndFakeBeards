@@ -1,6 +1,6 @@
-require "Items/Distributions"
-require "Items/ProceduralDistributions"
-require "RandomizedWorldContent/StoryClutter/StoryClutter_Definitions"
+require "Items/Distributions";
+require "Items/ProceduralDistributions";
+require "RandomizedWorldContent/StoryClutter/StoryClutter_Definitions";
 
 
 local doProceduralDistributions  = function(storage, item, count)
@@ -15,15 +15,15 @@ end
 
 
 
-doProceduralDistributions("SalonCounter", "Base.HairTuft", 0.1)
-doProceduralDistributions("SalonShelfHaircare", "Base.HairTuft", 0.1)
-doProceduralDistributions("CrateSalonSupplies", "Base.HairTuft", 0.1)
-doProceduralDistributions("SalonShelfHaircare", "Base.DummyWig", 1)
-doProceduralDistributions("SalonCounter", "Base.DummyWig", 1)
-doProceduralDistributions("CrateSalonSupplies", "Base.DummyWig", 2)
+doProceduralDistributions("SalonCounter", "Base.HairTuft", 0.1);
+doProceduralDistributions("SalonShelfHaircare", "Base.HairTuft", 0.1);
+doProceduralDistributions("CrateSalonSupplies", "Base.HairTuft", 0.1);
+doProceduralDistributions("SalonShelfHaircare", "Base.DummyWig", 1);
+doProceduralDistributions("SalonCounter", "Base.DummyWig", 1);
+doProceduralDistributions("CrateSalonSupplies", "Base.DummyWig", 2);
 
 
-table.insert(StoryClutter.HairSalonClutter, "Base.HairTuft")
+table.insert(StoryClutter.HairSalonClutter, "Base.HairTuft");
 
 local function postMergeDistributions()
 	SuburbsDistributions.aesthetic.bin = SuburbsDistributions.aesthetic.bin or {
@@ -51,15 +51,15 @@ local function postMergeDistributions()
 		rolls = 4,
 		ignoreZombieDensity = true,
 		isTrash = true,
-	}
+	};
 
 	for i = 1, 10 do
 		
-		table.insert(SuburbsDistributions.aesthetic.bin.items, "Base.HairTuft")
-		table.insert(SuburbsDistributions.aesthetic.bin.items, 25)
-		i = i + 1
+		table.insert(SuburbsDistributions.aesthetic.bin.items, "Base.HairTuft");
+		table.insert(SuburbsDistributions.aesthetic.bin.items, 25);
+		i = i + 1;
 	end
 
 end
 
-Events.OnPostDistributionMerge.Add(postMergeDistributions)
+Events.OnPostDistributionMerge.Add(postMergeDistributions);

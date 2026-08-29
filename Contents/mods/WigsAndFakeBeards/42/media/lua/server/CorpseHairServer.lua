@@ -15,7 +15,7 @@ local function onClientCommand(module, command, player, args)
                         end
                         obj:invalidateCorpse();
                     end
-                    break;
+                    break
                 end
             end
         end

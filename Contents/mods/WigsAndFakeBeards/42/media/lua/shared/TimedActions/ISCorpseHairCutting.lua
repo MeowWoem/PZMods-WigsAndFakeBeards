@@ -272,11 +272,11 @@ local function onServerCommand(module, command, args)
                             visual:setBeardModel(args.beardModel or "");
                         end
                         obj:invalidateCorpse();
-						print("CLIENT COMMAND")
-						print(args.hairModel)
-						print(args.beardModel)
+						print("CLIENT COMMAND");
+						print(args.hairModel);
+						print(args.beardModel);
                     end
-                    break;
+                    break
                 end
             end
         end
