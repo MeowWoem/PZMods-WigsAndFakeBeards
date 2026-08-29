@@ -4,7 +4,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Male - Mullet,
         ClothingItem = Wig_MaleHairMulletTINT,
         WorldStaticModel = WigBobHairMullet,
         BodyLocation = Nose,
@@ -17,7 +16,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Male - Buffont,
         ClothingItem = Wig_MaleHairBuffontTINT,
         WorldStaticModel = WigBobHairBuffont,
         BodyLocation = Nose,
@@ -30,7 +28,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Male - Fabian - Braided,
         ClothingItem = Wig_MaleHairFabianBraidedTINT,
         WorldStaticModel = WigBobHairFabianBraided,
         BodyLocation = Nose,
@@ -43,7 +40,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Male - Fabian - Curly,
         ClothingItem = Wig_MaleHairFabianCurlyTINT,
         WorldStaticModel = WigBobHairFabianCurly,
         BodyLocation = Nose,
@@ -56,7 +52,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Male - Messy - Curly,
         ClothingItem = Wig_MaleHairMessyCurlyTINT,
         WorldStaticModel = WigBobHairMessyCurly,
         BodyLocation = Nose,
@@ -69,7 +64,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Male - Mullet - Curly,
         ClothingItem = Wig_MaleHairMulletCurlyTINT,
         WorldStaticModel = WigBobHairMulletCurly,
         BodyLocation = Nose,
@@ -82,7 +76,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Male - Short Hat - Curly,
         ClothingItem = Wig_MaleHairShortHatCurlyTINT,
         WorldStaticModel = WigBobHairShortHatCurly,
         BodyLocation = Nose,
@@ -95,7 +88,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Male - Baldspot,
         ClothingItem = Wig_MaleHairBaldspotTINT,
         WorldStaticModel = WigMHairBaldspot,
         BodyLocation = Nose,
@@ -108,7 +100,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Male - Crew Cut,
         ClothingItem = Wig_MaleHairCrewCutTINT,
         WorldStaticModel = WigMHairCrewCut,
         BodyLocation = Nose,
@@ -121,7 +112,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Male - Donny,
         ClothingItem = Wig_MaleHairDonnyTINT,
         WorldStaticModel = WigMHairDonny,
         BodyLocation = Nose,
@@ -134,7 +124,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Male - Fabian,
         ClothingItem = Wig_MaleHairFabianTINT,
         WorldStaticModel = WigMHairFabian,
         BodyLocation = Nose,
@@ -147,7 +136,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Male - Messy,
         ClothingItem = Wig_MaleHairMessyTINT,
         WorldStaticModel = WigMHairMessy,
         BodyLocation = Nose,
@@ -160,7 +148,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Male - Metal,
         ClothingItem = Wig_MaleHairMetalTINT,
         WorldStaticModel = WigMHairMetal,
         BodyLocation = Nose,
@@ -173,7 +160,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Male - Picard,
         ClothingItem = Wig_MaleHairPicardTINT,
         WorldStaticModel = WigMHairPicard,
         BodyLocation = Nose,
@@ -186,7 +172,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Male - Recede,
         ClothingItem = Wig_MaleHairRecedeTINT,
         WorldStaticModel = WigMHairRecede,
         BodyLocation = Nose,
@@ -199,7 +184,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Unisex - Short,
         ClothingItem = Wig_MaleHairShortTINT,
         WorldStaticModel = WigMHairShort,
         BodyLocation = Nose,
@@ -212,7 +196,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Male - Short Hat,
         ClothingItem = Wig_MaleHairShortHatTINT,
         WorldStaticModel = WigMHairShortHat,
         BodyLocation = Nose,
@@ -225,7 +208,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Female - Back,
         ClothingItem = Wig_FemaleHairBackTINT,
         WorldStaticModel = WigFHairBack,
         BodyLocation = Nose,
@@ -238,7 +220,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Female - Bob,
         ClothingItem = Wig_FemaleHairBobTINT,
         WorldStaticModel = WigFHairBob,
         BodyLocation = Nose,
@@ -251,7 +232,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Female - Bun,
         ClothingItem = Wig_FemaleHairBunTINT,
         WorldStaticModel = WigFHairBun,
         BodyLocation = Nose,
@@ -264,7 +244,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Female - Demi,
         ClothingItem = Wig_FemaleHairDemiTINT,
         WorldStaticModel = WigFHairDemi,
         BodyLocation = Nose,
@@ -277,7 +256,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Female - Hat,
         ClothingItem = Wig_FemaleHairHatTINT,
         WorldStaticModel = WigFHairHat,
         BodyLocation = Nose,
@@ -290,7 +268,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Female - Kate,
         ClothingItem = Wig_FemaleHairKateTINT,
         WorldStaticModel = WigFHairKate,
         BodyLocation = Nose,
@@ -303,7 +280,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Female - Long,
         ClothingItem = Wig_FemaleHairLongTINT,
         WorldStaticModel = WigFHairLong,
         BodyLocation = Nose,
@@ -316,7 +292,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Female - Long 2,
         ClothingItem = Wig_FemaleHairLong2TINT,
         WorldStaticModel = WigFHairLong2,
         BodyLocation = Nose,
@@ -329,7 +304,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Female - Over Eye,
         ClothingItem = Wig_FemaleHairOverEyeTINT,
         WorldStaticModel = WigFHairOverEye,
         BodyLocation = Nose,
@@ -342,7 +316,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Unisex - Pony Tail,
         ClothingItem = Wig_FemaleHairPonyTailTINT,
         WorldStaticModel = WigFHairPonyTail,
         BodyLocation = Nose,
@@ -355,7 +328,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Unisex - Spike,
         ClothingItem = Wig_FemaleHairSpikeTINT,
         WorldStaticModel = WigBobHairSpike,
         BodyLocation = Nose,
@@ -368,7 +340,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Female - Bob - Curly,
         ClothingItem = Wig_FemaleHairBobCurlyTINT,
         WorldStaticModel = WigKateHairBobCurly,
         BodyLocation = Nose,
@@ -381,7 +352,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Unisex - Braided,
         ClothingItem = Wig_FemaleHairBraided01TINT,
         WorldStaticModel = WigBobHairBraided01,
         BodyLocation = Nose,
@@ -394,7 +364,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Female - Bun - Curly,
         ClothingItem = Wig_FemaleHairBunCurlyTINT,
         WorldStaticModel = WigKateHairBunCurly,
         BodyLocation = Nose,
@@ -407,7 +376,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Unisex - Cornrows,
         ClothingItem = Wig_FemaleHairCornrowsTINT,
         WorldStaticModel = WigBobHairCornrows,
         BodyLocation = Nose,
@@ -420,7 +388,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Unisex - Flat Top,
         ClothingItem = Wig_FemaleHairFlatTopTINT,
         WorldStaticModel = WigBobHairFlatTop,
         BodyLocation = Nose,
@@ -433,7 +400,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Unisex - Fresh,
         ClothingItem = Wig_FemaleHairFreshTINT,
         WorldStaticModel = WigBobHairFresh,
         BodyLocation = Nose,
@@ -446,7 +412,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Unisex - Greased Back,
         ClothingItem = Wig_FemaleHairGreasedBackTINT,
         WorldStaticModel = WigBobHairGreasedBack,
         BodyLocation = Nose,
@@ -459,7 +424,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Unisex - Grungey,
         ClothingItem = Wig_FemaleHairGrungeyTINT,
         WorldStaticModel = WigBobHairGrungey,
         BodyLocation = Nose,
@@ -472,7 +436,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Female - Grungey 2,
         ClothingItem = Wig_FemaleHairGrungey02TINT,
         WorldStaticModel = WigKateHairGrungey02,
         BodyLocation = Nose,
@@ -485,7 +448,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Unisex - Grungey Behind Ear,
         ClothingItem = Wig_FemaleHairGrungeyBehindEarTINT,
         WorldStaticModel = WigBobHairGrungeyBehindEar,
         BodyLocation = Nose,
@@ -498,7 +460,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Female - Grungey Parting,
         ClothingItem = Wig_FemaleHairGrungeyPartingTINT,
         WorldStaticModel = WigKateHairGrungeyParting,
         BodyLocation = Nose,
@@ -511,7 +472,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Female - Hat - Curly,
         ClothingItem = Wig_FemaleHairHatCurlyTINT,
         WorldStaticModel = WigKateHairHatCurly,
         BodyLocation = Nose,
@@ -524,7 +484,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Unisex - Hat Long,
         ClothingItem = Wig_FemaleHairHatLongTINT,
         WorldStaticModel = WigBobHairHatLong,
         BodyLocation = Nose,
@@ -537,7 +496,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Unisex - Hat Long - Braided,
         ClothingItem = Wig_FemaleHairHatLongBraidedTINT,
         WorldStaticModel = WigBobHairLongBraided,
         BodyLocation = Nose,
@@ -550,7 +508,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Unisex - Hat Long - Curly,
         ClothingItem = Wig_FemaleHairHatLongCurlyTINT,
         WorldStaticModel = WigBobHairHatLongCurly,
         BodyLocation = Nose,
@@ -563,7 +520,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Female - Kate - Curly,
         ClothingItem = Wig_FemaleHairKateCurlyTINT,
         WorldStaticModel = WigKateHairKateCurly,
         BodyLocation = Nose,
@@ -576,7 +532,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Unisex - Liberty Spikes,
         ClothingItem = Wig_FemaleHairLibertySpikesTINT,
         WorldStaticModel = WigBobHairLibertySpikes,
         BodyLocation = Nose,
@@ -589,7 +544,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Female - Long 2 - Curly,
         ClothingItem = Wig_FemaleHairLong2CurlyTINT,
         WorldStaticModel = WigKateHairLong2Curly,
         BodyLocation = Nose,
@@ -602,7 +556,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Unisex - Long - Braided,
         ClothingItem = Wig_FemaleHairLongBraidTINT,
         WorldStaticModel = WigKateHairLongBraid,
         BodyLocation = Nose,
@@ -615,7 +568,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Female - Long 2 - Braided,
         ClothingItem = Wig_FemaleHairLongBraid02TINT,
         WorldStaticModel = WigKateHairLongBraid02,
         BodyLocation = Nose,
@@ -628,7 +580,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Female - Long - Curly,
         ClothingItem = Wig_FemaleHairLongCurlyTINT,
         WorldStaticModel = WigKateHairLongCurly,
         BodyLocation = Nose,
@@ -641,7 +592,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Unisex - Mohawk Fan,
         ClothingItem = Wig_FemaleHairMohawkFanTINT,
         WorldStaticModel = WigKateHairMohawkFan,
         BodyLocation = Nose,
@@ -654,7 +604,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Unisex - Mohawk Flat,
         ClothingItem = Wig_FemaleHairMohawkFlatTINT,
         WorldStaticModel = WigKateHairMohawkFlat,
         BodyLocation = Nose,
@@ -667,7 +616,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Unisex - Mohawk Short,
         ClothingItem = Wig_FemaleHairMohawkShortTINT,
         WorldStaticModel = WigKateHairMohawkShort,
         BodyLocation = Nose,
@@ -680,7 +628,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Unisex - Mohawk Spike,
         ClothingItem = Wig_FemaleHairMohawkSpikeTINT,
         WorldStaticModel = WigKateHairMohawkSpike,
         BodyLocation = Nose,
@@ -693,7 +640,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Female - Over Eye - Curly,
         ClothingItem = Wig_FemaleHairOverEyeCurlyTINT,
         WorldStaticModel = WigKateHairOverEyeCurly,
         BodyLocation = Nose,
@@ -706,7 +652,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Female - Over Eye - Left,
         ClothingItem = Wig_FemaleHairOverEyeLeftTINT,
         WorldStaticModel = WigKateHairOverEyeLeft,
         BodyLocation = Nose,
@@ -719,7 +664,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Unisex - Parting Centre,
         ClothingItem = Wig_FemaleHairPartingCentreTINT,
         WorldStaticModel = WigKateHairPartingCentre,
         BodyLocation = Nose,
@@ -732,7 +676,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Unisex - Parting Centre Long,
         ClothingItem = Wig_FemaleHairPartingCentreLongTINT,
         WorldStaticModel = WigKateHairPartingCentreLong,
         BodyLocation = Nose,
@@ -745,7 +688,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Unisex - Parting Left,
         ClothingItem = Wig_FemaleHairPartingLeftTINT,
         WorldStaticModel = WigKateHairPartingLeft,
         BodyLocation = Nose,
@@ -758,7 +700,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Unisex - Parting Right,
         ClothingItem = Wig_FemaleHairPartingRightTINT,
         WorldStaticModel = WigKateHairPartingRight,
         BodyLocation = Nose,
@@ -771,7 +712,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Unisex - Pony Tail - Braided,
         ClothingItem = Wig_FemaleHairPonyTailBraidedTINT,
         WorldStaticModel = WigBobHairPonyTailBraided,
         BodyLocation = Nose,
@@ -784,7 +724,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Female - Rachel,
         ClothingItem = Wig_FemaleHairRachelTINT,
         WorldStaticModel = WigKateHairRachel,
         BodyLocation = Nose,
@@ -797,7 +736,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Female - Rachel - Curly,
         ClothingItem = Wig_FemaleHairRachelCurlyTINT,
         WorldStaticModel = WigKateHairRachelCurly,
         BodyLocation = Nose,
@@ -810,7 +748,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Unisex - Short - Curly,
         ClothingItem = Wig_FemaleHairShortCurlyTINT,
         WorldStaticModel = WigBobHairShortCurly,
         BodyLocation = Nose,
@@ -824,7 +761,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Wig - Female - Top Mop,
         ClothingItem = Wig_FemaleHairTopMopTINT,
         WorldStaticModel = WigKateHairTopMop,
         BodyLocation = Nose,
@@ -838,7 +774,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Fake Beard - Beard Only,
         ClothingItem = FakeBeard_BeardOnlyTINT,
         WorldStaticModel = FakeBeardBobBeardOnly,
         BodyLocation = Mask,
@@ -851,7 +786,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Fake Beard - Chin,
         ClothingItem = FakeBeard_ChinTINT,
         WorldStaticModel = FakeBeardBobBeardChin,
         BodyLocation = Mask,
@@ -864,7 +798,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Fake Beard - Chops,
         ClothingItem = FakeBeard_ChopsTINT,
         WorldStaticModel = FakeBeardBobBeardChops,
         BodyLocation = Mask,
@@ -877,7 +810,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Fake Beard - Full,
         ClothingItem = FakeBeard_FullTINT,
         WorldStaticModel = FakeBeardBobBeardFull,
         BodyLocation = Mask,
@@ -890,7 +822,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Fake Beard - Goatee,
         ClothingItem = FakeBeard_GoateeTINT,
         WorldStaticModel = FakeBeardBobBeardGoatee,
         BodyLocation = Mask,
@@ -903,7 +834,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Fake Beard - Long,
         ClothingItem = FakeBeard_LongTINT,
         WorldStaticModel = FakeBeardBobBeardLong,
         BodyLocation = Mask,
@@ -916,7 +846,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Fake Beard - Long Scruffy,
         ClothingItem = FakeBeard_LongScruffyTINT,
         WorldStaticModel = FakeBeardBobBeardLongScruffy,
         BodyLocation = Mask,
@@ -929,7 +858,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Fake Beard - Moustache,
         ClothingItem = FakeBeard_MoustacheTINT,
         WorldStaticModel = FakeBeardBobBeardMoustache,
         BodyLocation = Mask,
@@ -942,7 +870,6 @@ module Base
     {
         DisplayCategory = Accessory,
         ItemType = base:clothing,
-        DisplayName = Fake Beard - Pointy Chin,
         ClothingItem = FakeBeard_PointyChinTINT,
         WorldStaticModel = FakeBeardBobBeardPointyChin,
         BodyLocation = Mask,
