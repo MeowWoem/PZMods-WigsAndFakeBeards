@@ -4,7 +4,6 @@ module Base
     {
         DisplayCategory = Material,
         ItemType = base:normal,
-        DisplayName = Hair Tuft,
         WorldStaticModel = HairTuftTINT,
         Icon = HairTuft,
         Weight = 0.01,
@@ -14,7 +13,6 @@ module Base
     {
         DisplayCategory = Material,
         ItemType = base:normal,
-        DisplayName = Hair Tuft (Dirty),
         WorldStaticModel = HairTuftTINT,
         Icon = HairTuft,
         Weight = 0.01,
@@ -26,7 +24,6 @@ module Base
 	{
 		DisplayCategory = Material,
 		ItemType = base:normal,
-		DisplayName = Dummy Wig,
         WorldStaticModel = HairTuftTINT,
 		Weight = 0.01,
 		Icon = Wig,
