@@ -1,0 +1,70 @@
+[ v1.0.0 - 06.04.2025 ]
+Release
+[ ------ ]
+
+[ v1.1.1 - 06.23.2025 ]
+Fixed:
+- Fixed the "Collect hair from corpse" menu not appearing at certain zoom levels
+- Fixed a non-blocking error when opening the "Collect hair from corpse" menu when the target is an animal
+- Fixed the "Collect hair from corpse" menu appearing on dead animals.
+[ ------ ]
+
+[ v1.1.2 - 06.23.2025 ]
+Fixed:
+- Fixed an oversight in the corpse type check (animal or human) that caused an error and displayed the "Collect hair from corpse" menu when opening the context menu on a cell adjacent to the corpse
+[ ------ ]
+
+[ v1.1.3 - 04.04.2026 ]
+Fixed:
+- Fixed deprecated Lua API methods
+[ ------ ]
+
+[ v1.1.4 - 08.01.2026 ]
+Added:
+- Added French translation
+[ ------ ]
+
+[ v1.2.0 - 08.05.2026 ]
+Added:
+- Added Multiplayer support !
+
+Note that MP support is still in beta
+[ ------ ]
+
+[ v1.2.1 - 08.05.2026 ]
+Fixed:
+- Renamed files to fix scripts overrides by my others mods
+[ ------ ]
+
+[ v1.2.2 - 08.13.2026 ]
+Fixed:
+- Fixed server desynchronization when you cut corpse hairs
+[ ------ ]
+
+[ v1.2.3 - 08.13.2026 ]
+Fixed:
+- Fixed an incorrect JobType assignment
+[ ------ ]
+
+[ v1.2.4 - 08.13.2026 ]
+Changed:
+- ISWashClothing:
+    Chained complete() instead of overriding it outright, for better compatibility with other mods touching the same function.
+- ISTrimBeard
+    Chained complete() via the same pattern.
+- ISCutHair
+    Chained complete() via the same pattern.
+[ ------ ]
+
+[ v1.2.5 - 08.20.2026 ]
+Fixed:
+- Fixed an error with wig spawning on MP
+[ ------ ]
+
+[ v1.2.6 - 08.29.2026 ]
+Added:
+- Support for Mod Alert and Update System
+
+Changed:
+- Cleaning scripts and remove unused files
+[ ------ ]
