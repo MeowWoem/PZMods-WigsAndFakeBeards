@@ -20,5 +20,6 @@
 	"ContextMenu_HairYouWillGet": "You will get: %1 %2",
 	"ContextMenu_HairTuft": "Hair Tuft",
 	"ContextMenu_HairStyling": "Styling",
-	"ContextMenu_HairCut": "Cut"
+	"ContextMenu_HairCut": "Cut",
+	"ContextMenu_CleanHair": "Clean Hair (temporary fix for WMI)"
 }
