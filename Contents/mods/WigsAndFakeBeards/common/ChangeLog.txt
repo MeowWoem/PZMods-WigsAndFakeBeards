@@ -68,3 +68,8 @@ Added:
 Changed:
 - Cleaning scripts and remove unused files
 [ ------ ]
+
+[ v1.2.7 - 08.29.2026 ]
+Fixed:
+- Temporary fix for Wash Menu Improved (If the author of the WMI mod does not restore the use of the vanilla canbewashed tag, this "temporary" fix will become permanent...)
+[ ------ ]
