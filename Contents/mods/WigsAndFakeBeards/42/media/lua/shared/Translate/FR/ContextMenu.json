@@ -20,5 +20,6 @@
 	"ContextMenu_HairYouWillGet": "Vous obtiendrez : %1 %2",
 	"ContextMenu_HairTuft": "Touffe de cheveux",
 	"ContextMenu_HairStyling": "Coiffage",
-	"ContextMenu_HairCut": "Couper"
+	"ContextMenu_HairCut": "Couper",
+	"ContextMenu_CleanHair": "Laver des touffes de cheveux (Fix temporaire WMI)"
 }
