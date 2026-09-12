@@ -168,7 +168,7 @@ function ContextMenu.addOnCutHairCorpseOption(player, context, worldObjects, tes
 	if not shear and not scissors and not razor then return false; end
 
 	local body = nil;
-	local zoom = getCore():getZoom(0);
+	local zoom = getCore():getZoom(player);
 	local wz = playerObj:getZ();
 	local wx = IsoUtils.XToIso(getMouseX() * zoom, getMouseY() * zoom, wz);
 	local wy = IsoUtils.YToIso(getMouseX() * zoom, getMouseY() * zoom, wz);
